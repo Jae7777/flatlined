@@ -138,34 +138,34 @@ export default function Home() {
                 relative text-center text-white text top-1/2
                 ${isToggled ? 'responsive-text-sm' : 'responsive-text-md'}
             `}>
-              Reimagine The World In Code.
+              {`Reimagine The World In Code.`}
             </div>
           </div>
         </div>
 
         <div className=' pt-8 responsive-text-xxs'>
           <div className='responsive-text-sm text-cybercyan'>
-            Hey, I'm Justin
+            {`Hey, I'm Justin`}
           </div>
           <div className='text-offwhite py-4'>
-            I'm a freelance web developer, hobbyist game dev, and a music enthusiast.
+            {`I'm a freelance web developer, hobbyist game dev, and a music enthusiast.
             I have experience in leading ambitious projects, and am versatile in my skill set.
-            I thrive in the realm where technology, creativity, and innovation intersect. 
+            I thrive in the realm where technology, creativity, and innovation intersect.`}
             <br/> <br/>
-            Writing code is a bit like orchestrating a music piece;
+           {`Writing code is a bit like orchestrating a music piece;
             It starts with a defining motif and develops through endless revisions.
-            At its core is a desire to create something
-            <span className='text-cyberviolet'> beautiful.</span>
+            At its core is a desire to create something`}
+            <span className='text-cyberviolet'>{` beautiful.`}</span>
           </div>
         </div>
         <div className='flex flex-wrap gap-6 max-w-[400px] py-3'>
           <a href="/docs/Resume.pdf" download className='button-1'>
-              Resumé
+              {`Resumé`}
               <BiDownload/>
           </a>
 
           <a href='mailto:jchen4086@gmail.com' className='button-2'>
-            Contact
+            {`Contact`}
             <BiMailSend/>
           </a>
         </div>
