@@ -2,32 +2,114 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  height:100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  .main-body-toggled {
+    @apply py-8;
+    @apply px-12;
+    @apply ml-[250px];
+    @apply xs:block hidden;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .dark-dot-pattern {
+    background-color: #20202a;
+    opacity: 1;
+    background-image:  radial-gradient(#774c3e 0.6px, transparent 0.6000000000000001px), radial-gradient(#774c3e 0.6000000000000001px, #20202A 0.6px);
+    background-size: 24px 24px;
+    background-position: 0 0,12px 12px;
+  }
+  .light-backdrop-sm {
+    @apply rounded-full;
+    @apply w-1/2;
+    @apply h-1/2;
+    @apply bg-white;
+    @apply opacity-10;
+    box-shadow: 0 0 25px 25px #FFFFFF;
+  }
+  .main-body-untoggled {
+    @apply py-8;
+    @apply px-12;
+    @apply ml-[40px];
+    @apply block;
+  }
+  .clickable-dark {
+    @apply cursor-pointer;
+    @apply hover:opacity-65;
+  }
+  .clickable-light {
+    @apply cursor-pointer;
+    @apply hover:bg-current;
+  }
+  .navbar-item {
+    @apply w-[20px];
+    @apply h-[20px];
+  }
+  .button-1 {
+    @apply flex;
+    @apply flex-1;
+    @apply border-[1px];
+    @apply border-cyber-1;
+    @apply hover:[border-color:rgb(255_237_165)];
+    @apply text-cyber-1;
+    @apply hover:[color:rgb(255_237_165)];
+    @apply cursor-pointer;
+    @apply px-4;
+    @apply py-2;
+    @apply items-center;
+    @apply justify-center;
+    @apply gap-2;
+  }
+  .button-2 {
+    @apply flex;
+    @apply flex-1;
+    @apply bg-cyber-4;
+    @apply hover:[background-color:rgb(225_122_96)];
+    @apply rounded-sm;
+    @apply cursor-pointer;
+    @apply px-4;
+    @apply py-2;
+    @apply items-center;
+    @apply justify-center;
+    @apply gap-2;
+  }
+  .responsice-text-xxs {
+    font-size: 0.625rem;
+  }
+  .responsive-text-xs {
+    font-size: 0.75rem;
+  }
+  .responsive-text-sm {
+    font-size: 0.875rem;
+  }
+  .responsive-text-md {
+    font-size: 1rem;
+  }
+  .responsive-text-lg {
+    font-size: 1.125rem;
+  }
+  @media (min-width: 640px) { 
+    .responsive-text-xxs { font-size: 0.75rem; }
+    .responsive-text-xs { font-size: 0.875rem; }
+    .responsive-text-sm { font-size: 1rem; }
+    .responsive-text-md { font-size: 1.125rem; }
+    .responsive-text-lg { font-size: 1.25rem; }
+  }
+  @media (min-width: 768px) { 
+    .responsive-text-xxs { font-size: 0.875rem; }
+    .responsive-text-xs { font-size: 1rem; }
+    .responsive-text-sm { font-size: 1.125rem; }
+    .responsive-text-md { font-size: 1.25rem; }
+    .responsive-text-lg { font-size: 1.5rem; }
+  }
+  @media (min-width: 1024px) { 
+    .responsive-text-xxs { font-size: 1rem; }
+    .responsive-text-xs { font-size: 1.125rem; }
+    .responsive-text-sm { font-size: 1.25rem; }
+    .responsive-text-md { font-size: 1.5rem; }
+    .responsive-text-lg { font-size: 2rem; }
   }
 }
