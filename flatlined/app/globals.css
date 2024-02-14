@@ -91,12 +91,32 @@ body,
   .responsive-text-lg {
     font-size: 1.125rem;
   }
+  .responsive-screen-sm {
+    height: 200px;
+    width: 100%;
+  }
+  .responsive-screen-md {
+    height: 250px;
+    width: 100%;
+  }
+  .responsive-screen-lg {
+    height: 300px;
+    width: 100%;
+  }
+  .responsive-screen-xl {
+    height: 350px;
+    width: 100%;
+  }
   @media (min-width: 640px) { 
     .responsive-text-xxs { font-size: 0.75rem; }
     .responsive-text-xs { font-size: 0.875rem; }
     .responsive-text-sm { font-size: 1rem; }
     .responsive-text-md { font-size: 1.125rem; }
     .responsive-text-lg { font-size: 1.25rem; }
+    .responsive-screen-sm { height: 250px; }
+    .responsive-screen-md { height: 300px; }
+    .responsive-screen-lg { height: 350px; }
+    .responsive-screen-xl { height: 400px; }
   }
   @media (min-width: 768px) { 
     .responsive-text-xxs { font-size: 0.875rem; }
@@ -104,6 +124,10 @@ body,
     .responsive-text-sm { font-size: 1.125rem; }
     .responsive-text-md { font-size: 1.25rem; }
     .responsive-text-lg { font-size: 1.5rem; }
+    .responsive-screen-sm { height: 300px; }
+    .responsive-screen-md { height: 350px; }
+    .responsive-screen-lg { height: 400px; }
+    .responsive-screen-xl { height: 450px; }
   }
   @media (min-width: 1024px) { 
     .responsive-text-xxs { font-size: 1rem; }
@@ -111,5 +135,21 @@ body,
     .responsive-text-sm { font-size: 1.25rem; }
     .responsive-text-md { font-size: 1.5rem; }
     .responsive-text-lg { font-size: 2rem; }
+    .responsive-screen-sm { height: 350px; }
+    .responsive-screen-md { height: 400px; }
+    .responsive-screen-lg { height: 450px; }
+    .responsive-screen-xl { height: 500px; }
+  }
+  @media (min-width: 1280px) {
+    .responsive-screen-sm { height: 400px; }
+    .responsive-screen-md { height: 450px; }
+    .responsive-screen-lg { height: 500px; }
+    .responsive-screen-xl { height: 550px; }
+  }
+  @media (min-width: 1536px) {
+    .responsive-screen-sm { height: 450px; }
+    .responsive-screen-md { height: 500px; }
+    .responsive-screen-lg { height: 550px; }
+    .responsive-screen-xl { height: 600px; }
   }
 }

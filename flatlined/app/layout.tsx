@@ -5,7 +5,6 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import SideBar from "./components/Sidebar";
 import { Analytics } from "@vercel/analytics/react";
 
 const font = Poppins({

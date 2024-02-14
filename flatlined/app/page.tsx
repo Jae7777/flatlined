@@ -117,10 +117,9 @@ export default function Home() {
       >
         <div className={`
           ${hero.className}
-          h-[200px] 
           ${isToggled 
-            ? 'sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[450px]'
-            : 'xs:h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px] 2xl:h-[500px]'
+            ? 'responsive-screen-sm'
+            : 'responsive-screen-md'
           }
         `}>
           <div className='w-full h-full relative' style={{boxShadow: "0 0 10px #101215"}}>
