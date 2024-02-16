@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import File from "./File"
-import data from '../portfolio.json'
-import { useRouter } from "next/navigation"
+import portfolio from '../data/portfolio.json'
+import { useRouter, useSearchParams } from "next/navigation"
 
 interface FileExplorerProps {
 
@@ -10,22 +10,19 @@ interface FileExplorerProps {
 const FileExplorer: React.FC<FileExplorerProps> = ({
   
 }) => {
-  const router = useRouter()
-  const websites = data.projects.webdevelopment
-  const games = data.projects.gamedevelopment
+  const projects = Object.keys(portfolio)
+
   return (
     <div className='
       justify-center items-center space-y-[1px]
     '>
       {
-        Object.keys(websites).map((key) => { 
-          const website = websites[key as keyof typeof websites]         
+        projects.map((project) => { 
           return (
             <File
-              key={key}
-              filename={website.name}
-              data={website}
-              onClick={() => {router.push(`/projects/webdevelopment/${key}`)}}
+              key={project}
+              filename={portfolio[project as keyof typeof portfolio].name}
+              param={project}
             />
           )
         })
