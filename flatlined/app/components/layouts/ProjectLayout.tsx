@@ -5,6 +5,7 @@ import LinkButton from "../LinkButton"
 import LogoGrid from "../body/LogoGrid"
 import Subtitle from "../body/Subtitle"
 import logoURLs from '../../data/logos.json'
+import Text from "../body/Text"
 
 interface ProjectLayoutProps {
   isToggled: boolean
@@ -36,6 +37,38 @@ const ProjectLayout: React.FC<ProjectLayoutProps> = ({
           url={project.url}
         />
       </div>
+
+      <div className='py-4 space-y-4'>
+        <div className='flex justify-between gap-4 '>
+          <Text
+            content={project.role}
+            styling='text-left responsive-text-sm text-cybercyan'
+          />
+          <div className='text-right space-y-2'>
+            <Text
+              content={`${project.startDate} - ${project.endDate}`}
+              styling='responsive-text-xs text-cyber-2'
+            />
+            <Text
+              content={`Status: ${project.status}`}
+              styling='text-cyberviolet responsive-text-xs'
+            />
+          </div>
+        </div>
+
+        <Text
+          content={'description' in project ? project.description : ''}
+          styling='text-offwhite responsive-text-xs'
+        />
+        <Text
+          content={`Collaborators: 
+          ${'collaborators' in project 
+          ? project.collaborators.join(', ')
+          : 'None'}`}
+          styling='text-cyber-2 text-sm'
+        />
+      </div>
+      
 
       <div className='pt-6'>
         <Subtitle content='SKILLS' />

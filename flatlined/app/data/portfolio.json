@@ -4,7 +4,7 @@
       "url": "https://www.questlist.net/",
       "caniframe": true,
       "role": "Founder, Head Developer",
-      "startDate": "Late August 2023",
+      "startDate": "August 28, 2023",
       "endDate": "Present",
       "status": "Ongoing",
       "skillset": [
@@ -39,7 +39,7 @@
       "url": "https://www.prodigyhealthplus.com/",
       "caniframe": false,
       "preview": "/showcases/prodigy.png",
-      "role": "Contracted Web Developer",
+      "role": "Contract Web Developer",
       "startDate": "June 3, 2023",
       "endDate": "June 20, 2023",
       "status": "Finished",
@@ -47,7 +47,6 @@
         "Wix", "Meta Pixel", "Google Analytics", "Google My Business", 
         "Canva", "HTML5", "GIMP"
       ],
-      "collaborators": [],
       "description": "Full stack website, content creation, complete branding and SEO"
     },
     "fatjays": {
@@ -63,7 +62,6 @@
         "Wix", "Meta Pixel", "Google Analytics", "Google My Business", 
         "Canva", "HTML5", "GIMP"
       ],
-      "collaborators": [],
       "description": "Full stack website, content creation, complete branding and SEO"
     },
     "nuyoudefinestudio": {
@@ -79,7 +77,6 @@
         "Wix", "Meta Pixel", "Google Analytics", "Google My Business", 
         "Canva", "Square", "GIMP"
       ],
-      "collaborators": [],
       "description": "Full stack commerce & bookings website, content creation, Facebook advertising, branding and SEO"
     },
     "theatg": {
@@ -95,7 +92,6 @@
         "Wix", "Google Analytics", "Google Artist Profile", 
         "Canva", "Youtube API", "GIMP"
       ],
-      "collaborators": [],
       "description": "Complete artist & fashion website, content creation, YouTube integration, branding and SEO"
     },
     "huntercoveproductions": {
@@ -110,7 +106,6 @@
       "skillset": [
         "Wix", "Google Analytics", "Canva", "Youtube API", "GIMP"
       ],
-      "collaborators": [],
       "description": "Portfolio website for Freelancer Producer, YouTube integration, branding and SEO"
     },
     "unitedhomeconstruction": {
@@ -125,7 +120,6 @@
       "skillset": [
         "Wix", "Google Analytics", "Canva", "GIMP"
       ],
-      "collaborators": [],
       "description": "Full stack bookings website, content creation, branding and SEO"
     },
     "mayflower": {
@@ -140,8 +134,7 @@
       "status": "Hiatus",
       "skillset": [
         "Pygame", "Python", "GIMP", "Pixel Studio"
-      ],
-      "collaborators": []
+      ]
     },
     "suchlife": {
       "name": "Such Life",
@@ -154,7 +147,6 @@
       "status": "Departed",
       "skillset": [
         "Unity", "C#", "GIMP"
-      ],
-      "collaborators": []
+      ]
     }
   }
