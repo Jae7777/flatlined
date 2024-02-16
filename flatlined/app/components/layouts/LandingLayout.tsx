@@ -1,8 +1,8 @@
 import { Fira_Code } from "next/font/google"
 import Image from "next/image"
 import { BiDownload, BiMailSend } from "react-icons/bi"
-import Subtitle from "./Subtitle"
-import LogoGrid from "./LogoGrid"
+import Subtitle from "../body/Subtitle"
+import LogoGrid from "../body/LogoGrid"
 
 const hero = Fira_Code({
   subsets: ['latin'],
