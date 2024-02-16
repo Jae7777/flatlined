@@ -25,11 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} bg-null-body`}>
-          <div className=''>
-            <Navbar/>
-            {children}
-            <Analytics />
-          </div>
+        <div className=''>
+          <Navbar/>
+          {children}
+          <Analytics />
+        </div>
       </body>
     </html>
   );
