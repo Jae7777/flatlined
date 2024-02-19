@@ -24,5 +24,8 @@
   "Python": "/logos/python.svg",
   "Pixel Studio": "/logos/pixelstudio.png",
   "Unity": "/logos/unity.svg",
-  "C#": "/logos/c#.svg"
+  "C#": "/logos/csharp.svg",
+  "Android Studio": "/logos/androidstudio.svg",
+  "Flutter": "/logos/flutter.svg",
+  "Dart": "/logos/dart.svg"
 }
