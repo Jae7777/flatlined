@@ -3,98 +3,13 @@ import Image from "next/image"
 import { BiDownload, BiMailSend } from "react-icons/bi"
 import Subtitle from "../body/Subtitle"
 import LogoGrid from "../body/LogoGrid"
+import logos from "../../data/logos.json"
 
 const hero = Fira_Code({
   subsets: ['latin'],
   weight: ['500']
 })
 
-const skills = [
-  {
-    path: '/logos/nextjs.svg',
-    name: 'Next.js'
-  },
-  {
-    path: '/logos/react.svg',
-    name: 'React'
-  },
-  {
-    path: '/logos/tailwindcss.svg',
-    name: 'Tailwind CSS'
-  },
-  {
-    path: '/logos/mongodb.svg',
-    name: 'MongoDB'
-  },
-  {
-    path: '/logos/prisma.svg',
-    name: 'Prisma'
-  },
-  {
-    path: '/logos/googlecloud.svg',
-    name: 'Google Cloud'
-  },
-  {
-    path: '/logos/canva.svg',
-    name: 'Canva'
-  },
-  {
-    path: '/logos/gimp.svg',
-    name: 'GIMP'
-  },
-  {
-    path: '/logos/azure.svg',
-    name: 'Azure'
-  },
-  {
-    path: '/logos/bootstrap.svg',
-    name: 'CSS Bootstrap'
-  },
-  {
-    path: '/logos/django.svg',
-    name: 'Django'
-  },
-  {
-    path: '/logos/google.svg',
-    name: 'Google Artist Profile'
-  },
-  {
-    path: '/logos/nodejs.svg',
-    name: 'Node.js'
-  },
-  {
-    path: '/logos/pixelstudio.png',
-    name: 'Pixel Studio'
-  },
-  {
-    path: '/logos/meta.svg',
-    name: 'Meta Pixel'
-  },
-  {
-    path: '/logos/googleanalytics.svg',
-    name: 'Google Analytics'
-  },
-  {
-    path: '/logos/googlemybusiness.svg',
-    name: 'Google My Business'
-  },
-  {
-    path: '/logos/html5.svg',
-    name: 'HTML5'
-  },
-  {
-    path: '/logos/square.svg',
-    name: 'Square'
-  },
-  {
-    path: '/logos/youtube.svg',
-    name: 'Youtube API'
-  },
-  {
-    path: '/logos/pygame.svg',
-    name: 'Pygame'
-  },
-]
 
 interface LandingLayoutProps{
   isToggled: boolean
@@ -103,6 +18,12 @@ interface LandingLayoutProps{
 const LandingLayout: React.FC<LandingLayoutProps> = ({
   isToggled,
 }) => {
+  const logoObjects = Object.entries(logos).map(
+    (obj) => {
+      return {name: obj[0], path: obj[1]}
+    }
+  )
+  
   return (
     <div>
       <div className={`
@@ -164,7 +85,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = ({
       </div>
 
       <LogoGrid
-        logos={skills}
+        logos={logoObjects}
         isToggled={isToggled}
       />
     </div>
