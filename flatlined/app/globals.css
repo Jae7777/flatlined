@@ -41,10 +41,12 @@ body,
   .clickable-dark {
     @apply cursor-pointer;
     @apply hover:opacity-65;
+    @apply duration-300;
   }
   .clickable-light {
     @apply cursor-pointer;
     @apply hover:bg-current;
+    @apply duration-300;
   }
   .navbar-item {
     @apply w-[20px];
@@ -64,6 +66,7 @@ body,
     @apply items-center;
     @apply justify-center;
     @apply gap-2;
+    @apply duration-300;
   }
   .button-2 {
     @apply flex;
@@ -77,6 +80,7 @@ body,
     @apply items-center;
     @apply justify-center;
     @apply gap-2;
+    @apply duration-300;
   }
   .responsive-text-xxs {
     font-size: 0.625rem;
