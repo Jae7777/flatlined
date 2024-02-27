@@ -8,7 +8,7 @@
     "endDate": "Present",
     "status": "Ongoing",
     "skillset": [
-      "Flutter", "Dart", "Android Studio"
+      "Flutter", "Dart", "Android Studio", "Git"
     ],
     "collaborators": [
       "Alexander Grant"
@@ -25,7 +25,7 @@
     "status": "Ongoing",
     "skillset": [
       "Next.js", "React", "Tailwind CSS", "MongoDB", "Prisma", "Vercel",
-      "Google Cloud", "Canva", "GIMP"
+      "Google Cloud", "Canva", "GIMP", "Git"
     ],
     "collaborators": [
       "Nico Wang"
@@ -43,7 +43,7 @@
     "status": "Departed",
     "skillset": [
       "React", "Django", "CSS Bootstrap", "Azure", "Tailwind CSS",
-      "Prisma", "Node.js"
+      "Prisma", "Node.js", "Open Street Map", "SQL", "Git"
     ],
     "collaborators": [
       "Sheldon", "Harshita Garg", "Dalond", "Adrian Rodriguez"
@@ -149,7 +149,7 @@
     "endDate": "August 28, 2023",
     "status": "Hiatus",
     "skillset": [
-      "Pygame", "Python", "GIMP", "Pixel Studio"
+      "Pygame", "Python", "GIMP", "Pixel Studio", "Git"
     ]
   },
   "suchlife": {
@@ -162,7 +162,7 @@
     "endDate": "April 24, 2023",
     "status": "Departed",
     "skillset": [
-      "Unity", "C#", "GIMP"
+      "Unity", "C#", "GIMP", "Git"
     ]
   }
 }

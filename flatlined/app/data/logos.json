@@ -27,5 +27,8 @@
   "C#": "/logos/csharp.svg",
   "Android Studio": "/logos/androidstudio.svg",
   "Flutter": "/logos/flutter.svg",
-  "Dart": "/logos/dart.svg"
+  "Dart": "/logos/dart.svg",
+  "SQL": "/logos/sql.svg",
+  "Open Street Map": "/logos/openstreetmap.svg",
+  "Git": "/logos/git.svg"
 }
