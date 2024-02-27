@@ -30,5 +30,8 @@
   "Dart": "/logos/dart.svg",
   "SQL": "/logos/sql.svg",
   "Open Street Map": "/logos/openstreetmap.svg",
-  "Git": "/logos/git.svg"
+  "Git": "/logos/git.svg",
+  "Unreal Engine": "/logos/unrealengine.svg",
+  "Photoshop": "/logos/photoshop.svg",
+  "Tensorflow": "/logos/tensorflow.svg"
 }
