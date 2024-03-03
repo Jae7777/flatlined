@@ -15,7 +15,7 @@ export default function Home({
 }: {
   searchParams: { [key: string]: string | undefined}
 }) {
-  const [isToggled, setIsToggled] = useState(true)
+  const [isToggled, setIsToggled] = useState(false)
 
   return (
     <div className='h-full'>
