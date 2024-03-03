@@ -24,6 +24,7 @@ const Logo: React.FC<LogoProps> = ({
             alt={`${name}-flatlined.gg`}
             fill
             className='h-full w-full'
+            sizes='13vw'
           />
         </div>
 

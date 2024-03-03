@@ -40,6 +40,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = ({
               alt='hero'
               fill
               style={{ objectFit: 'cover'}}
+              sizes='100vw'
             />
           </div>
           <div 

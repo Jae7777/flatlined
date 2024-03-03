@@ -31,6 +31,7 @@ const Showcase: React.FC<ShowcaseProps> = ({
                   alt={`${name}_flatlined`}
                   fill
                   className='object-cover'
+                  sizes='100vw'
                 />
             : <div className='flex w-full h-full justify-center items-center text-white'>
                 <div>No Preview Available</div>
