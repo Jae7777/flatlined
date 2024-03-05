@@ -4,12 +4,6 @@ import SideBar from "./components/sidebar/Sidebar";
 import { useState } from "react";
 import { Fira_Code } from "next/font/google";
 import BodyContent from "./components/layouts/BodyContent";
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: '',
-  description: ''
-}
 
 const hero = Fira_Code({
   subsets: ['latin'],
