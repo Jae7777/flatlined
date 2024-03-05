@@ -1,0 +1,50 @@
+[
+  {
+    "text": "Enrolled in Scrimba's React Bootcamp",
+    "date": "May 03 2023",
+    "category": {
+      "tag": ["Learning", "React", "Bootcamp"],
+      "color": "#61dbfb"
+    },
+    "link": {
+      "url": "https://scrimba.com/learn/learnreact",
+      "text": "Link to course"
+    }
+  },
+  {
+    "text": "Enrolled in Scrimba's React Bootcamp",
+    "date": "May 03 2023",
+    "category": {
+      "tag": ["Learning", "React", "Bootcamp"],
+      "color": "#61dbfb"
+    },
+    "link": {
+      "url": "https://scrimba.com/learn/learnreact",
+      "text": "Link to course"
+    }
+  },
+  {
+    "text": "Enrolled in Scrimba's React Bootcamp",
+    "date": "May 03 2023",
+    "category": {
+      "tag": ["Learning", "React", "Bootcamp"],
+      "color": "#61dbfb"
+    },
+    "link": {
+      "url": "https://scrimba.com/learn/learnreact",
+      "text": "Link to course"
+    }
+  },
+  {
+    "text": "Enrolled in Scrimba's React Bootcamp",
+    "date": "May 03 2023",
+    "category": {
+      "tag": ["Learning", "React", "Bootcamp"],
+      "color": "#61dbfb"
+    },
+    "link": {
+      "url": "https://scrimba.com/learn/learnreact",
+      "text": "Link to course"
+    }
+  }
+]

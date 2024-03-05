@@ -4,6 +4,7 @@ import { BiDownload, BiMailSend } from "react-icons/bi"
 import Subtitle from "../body/Subtitle"
 import LogoGrid from "../body/LogoGrid"
 import logos from "../../data/logos.json"
+import Timeline from "../timeline/Timeline"
 
 const hero = Fira_Code({
   subsets: ['latin'],
@@ -89,6 +90,8 @@ const LandingLayout: React.FC<LandingLayoutProps> = ({
         logos={logoObjects}
         isToggled={isToggled}
       />
+
+      <Timeline/>
     </div>
   )
 }

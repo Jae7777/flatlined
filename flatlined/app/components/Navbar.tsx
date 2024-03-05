@@ -10,8 +10,8 @@ const Navbar = () => {
 
   return (
     <div className='fixed w-full z-50 h-[40px] text-center bg-null-body'>
-      <div onClick={() => {router.push('/')}} className='
-        w-[70%] h-full mx-auto flex
+      <div className='
+        h-full mx-auto flex
         items-center justify-center
       '>
         <div onClick={() => {router.push('/')}} className='
