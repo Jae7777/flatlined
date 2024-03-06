@@ -5,11 +5,13 @@ import { useCallback } from "react"
 interface FileProps {
   filename: string
   param: string
+  setToggledFalse: () => void
 }
 
 const File: React.FC<FileProps> = ({
   filename,
-  param
+  param,
+  setToggledFalse
 }) => {
   const router = useRouter()
   const params = useSearchParams()
@@ -30,6 +32,10 @@ const File: React.FC<FileProps> = ({
       url: '/',
       query: updatedQuery
     }, { skipNull: true })
+
+    // reset toggle state to false if xs screen
+    const width = window.innerWidth
+    if (width < 540) setToggledFalse()
 
     router.push(url)
   }, [param, params, router])

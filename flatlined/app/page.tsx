@@ -16,12 +16,16 @@ export default function Home({
   searchParams: { [key: string]: string | undefined}
 }) {
   const [isToggled, setIsToggled] = useState(false)
+  const setToggledFalse = () => {
+    setIsToggled(false)
+  }
 
   return (
     <div className='h-full'>
       <SideBar
         onToggle={() => {setIsToggled(!isToggled)}}
         isToggled={isToggled}
+        setToggledFalse={setToggledFalse}
       />
       <div 
         className={`

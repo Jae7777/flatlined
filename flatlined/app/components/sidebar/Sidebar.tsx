@@ -12,11 +12,13 @@ const font = Roboto_Mono({
 interface SideBarProps {
   onToggle: () => void
   isToggled: boolean
+  setToggledFalse: () => void
 }
 
 const SideBar: React.FC<SideBarProps> = ({
   onToggle,
-  isToggled
+  isToggled,
+  setToggledFalse
 }) => {
   return (
     <div className={`
@@ -62,7 +64,7 @@ const SideBar: React.FC<SideBarProps> = ({
             </div>
           </div>
           
-          <FileExplorer/>
+          <FileExplorer setToggledFalse={setToggledFalse}/>
         </div>
 
       </div>
