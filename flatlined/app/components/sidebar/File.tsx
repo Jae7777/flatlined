@@ -38,7 +38,7 @@ const File: React.FC<FileProps> = ({
     if (width < 540) setToggledFalse()
 
     router.push(url)
-  }, [param, params, router])
+  }, [param, params, router, setToggledFalse])
 
   return (
     <div 

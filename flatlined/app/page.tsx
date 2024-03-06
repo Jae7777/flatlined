@@ -1,7 +1,7 @@
 'use client'
 
 import SideBar from "./components/sidebar/Sidebar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Fira_Code } from "next/font/google";
 import BodyContent from "./components/layouts/BodyContent";
 
@@ -15,10 +15,15 @@ export default function Home({
 }: {
   searchParams: { [key: string]: string | undefined}
 }) {
-  const [isToggled, setIsToggled] = useState(window.innerWidth > 640 ? true : false)
+  const [isToggled, setIsToggled] = useState(false)
   const setToggledFalse = () => {
     setIsToggled(false)
   }
+
+  useEffect(() => {
+    const width = window.innerWidth
+    if (width > 640) setIsToggled(true)
+  }, [])
 
   return (
     <div className='h-full'>
