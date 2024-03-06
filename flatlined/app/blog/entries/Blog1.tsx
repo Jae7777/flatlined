@@ -12,7 +12,7 @@ const Blog1 = () => {
       <p className="responsive-text-sm text-neutral-400">
         {'The idea of a blog was inspired by Nick Vercillo, a film director and producer that I look up to. Not because I secretly aspire to be a film director but am living the numbing life of a CS major, but because of how well connected he seems to be with his inner self.'}
         <br/><br/>
-        {`Imposter syndrome is something that I've been struggling with as long as I can remember. Maybe it's due to my strict Chinese upbringing, or perhaps due to the fact that writing past midnight brings out supressed sentimentality. I still recall the feeling I felt during my first CS lecture in university, where to my left and right were CS geeks persumably hacking into the mainframe of the campus servers and I'm left wondering what the hell a class object was.`}        <br/><br/>
+        {`Imposter syndrome is something that I've been struggling with as long as I can remember. Maybe it's due to my strict Chinese upbringing, or perhaps due to the fact that writing past midnight brings out supressed sentimentality. I still recall the feeling I felt during my first CS lecture in university, where to my left and right were CS geeks persumably hacking into the mainframe of the campus servers and I'm left wondering what the hell a class object was.`}
         <br/><br/>
         {`It's gotten a lot better now. I feel a lot more secure about my knowledge in, well, most things. But the imposter syndrome always lingers. It starts with comparing yourself against the people next to you. Then, the ones at the top of the class. Next, industry leaders and tech geniuses that writes AI that can finish the CS homework that took me 20 hours.`}
         <br/><br/>
