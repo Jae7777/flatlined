@@ -91,6 +91,10 @@ const LandingLayout: React.FC<LandingLayoutProps> = ({
         isToggled={isToggled}
       />
 
+      <div className='pt-6'>
+        <Subtitle content='TIMELINE' />
+      </div>
+
       <Timeline/>
     </div>
   )

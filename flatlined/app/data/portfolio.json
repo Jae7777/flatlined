@@ -1,11 +1,24 @@
 {
+  "commonplace": {
+    "name": "Common Place",
+    "url": "https://common-place.vercel.app/",
+    "caniframe": true,
+    "role": "Web Developer",
+    "startDate": "February 13, 2024",
+    "endDate": "Present",
+    "status": "Ongoing",
+    "skillset": [
+      "Next.js", "React", "Tailwind CSS"
+    ],
+    "description": "A tailored portfolio website I made for my friend Christopher Poon. May his job hunt be ever successful 🙏."
+  },
   "flyright": {
     "name": "Fly Right",
     "url": "",
     "caniframe": false,
     "role": "Front-end Developer",
     "startDate": "February 16, 2024",
-    "endDate": "Present",
+    "endDate": "February 21, 2024",
     "status": "Ongoing",
     "skillset": [
       "Flutter", "Dart", "Android Studio", "Git"
@@ -56,7 +69,7 @@
     "caniframe": false,
     "preview": "/showcases/prodigy.png",
     "role": "Contract Web Developer",
-    "startDate": "June 3, 2023",
+    "startDate": "May 30, 2023",
     "endDate": "June 20, 2023",
     "status": "Finished",
     "skillset": [
@@ -144,8 +157,7 @@
     "caniframe": false,
     "preview": "",
     "role": "Head Developer",
-    "date": "May 2023 - September 2023",
-    "startDate": "May 3, 2023",
+    "startDate": "May 13, 2023",
     "endDate": "August 28, 2023",
     "status": "Hiatus",
     "skillset": [
@@ -157,7 +169,6 @@
     "url": "https://github.com/gaberdell/RCOSLife2.0GameProject",
     "caniframe": false,
     "role": "UI Designer",
-    "date": "January 2023 - May 2023",
     "startDate": "February 8, 2023",
     "endDate": "April 24, 2023",
     "status": "Departed",

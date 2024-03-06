@@ -3,9 +3,10 @@ import './Timeline.css'
 interface TimelineItemProp {
   data: {
     text: string,
-    date: string,
+    startdate: string,
+    enddate: string,
     category: {
-      tag: string[]
+      tag: string
       color: string,
     },
     link: {
@@ -25,15 +26,11 @@ const TimelineItem: React.FC<TimelineItemProp> = ({
       <div className="
         timeline-item-content
       ">
-        {data.category.tag.map((item, i) => {
-          return (
-            <span className="" key={i} style={{ background: data.category.color }}>
-              {item}
-            </span>
-          )
-        })}
+        <span className="" style={{ background: data.category.color }}>
+          {data.category.tag}
+        </span>
         
-        <time>{data.date}</time>
+        <time>{`${data.startdate} - ${data.enddate}`}</time>
         <p>{data.text}</p>
         {data.link && (
           <a
