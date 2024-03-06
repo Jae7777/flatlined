@@ -3,6 +3,8 @@
 import { redirect, useRouter } from "next/navigation"
 import { FaGithub, FaHouse, FaLinkedinIn } from "react-icons/fa6"
 import EmailIcon from "./EmailIcon"
+import { SiLivejournal } from "react-icons/si"
+import { IoIosJournal } from "react-icons/io"
 
 const Navbar = () => {
   const router = useRouter()
@@ -21,6 +23,19 @@ const Navbar = () => {
             className='navbar-item'
             color='#feb080'
           />
+        </div>
+
+        <div className="absolute left-8 text-[#feb080] text-sm">
+          <div 
+            className="flex gap-1 items-center clickable-dark"
+            onClick={() => router.push('/blog')}
+          >
+            <IoIosJournal
+              className="navbar-item"
+              color='#feb080'
+            />
+            Blog
+          </div>
         </div>
 
         <div className='absolute right-8'>
