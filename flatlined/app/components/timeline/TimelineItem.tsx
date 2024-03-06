@@ -9,7 +9,7 @@ interface TimelineItemProp {
       tag: string
       color: string,
     },
-    link: {
+    link?: {
       url: string,
       text: string,
     }
