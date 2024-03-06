@@ -12,7 +12,7 @@ interface TimelineItemProp {
     link?: {
       url: string,
       text: string,
-    }
+    } | null
   }
 }
 
