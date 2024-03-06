@@ -15,7 +15,7 @@ export default function Home({
 }: {
   searchParams: { [key: string]: string | undefined}
 }) {
-  const [isToggled, setIsToggled] = useState(false)
+  const [isToggled, setIsToggled] = useState(window.innerWidth > 640 ? true : false)
   const setToggledFalse = () => {
     setIsToggled(false)
   }
@@ -28,7 +28,7 @@ export default function Home({
         setToggledFalse={setToggledFalse}
       />
       <div 
-        className={`
+        className={`sm:text-white
           ${isToggled ? 'main-body-toggled' : 'main-body-untoggled'}
         `}
       >
