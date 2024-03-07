@@ -55,7 +55,7 @@
     text-align: left;
     align-items: flex-start;
   }
-
+  /* triangle */
   .timeline-item:nth-child(odd) .timeline-item-content::after {
     right: auto;
     left: -7.5px;
