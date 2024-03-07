@@ -42,6 +42,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = ({
               fill
               style={{ objectFit: 'cover'}}
               sizes='100vw'
+              priority={true}
             />
           </div>
           <div 
