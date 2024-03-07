@@ -22,10 +22,8 @@ const TimelineItem: React.FC<TimelineItemProp> = ({
   return ( 
     <div className="
       timeline-item
-      flex items-end pr-[30px] relative
-      my-[10px] w-1/2 text-white
     ">
-      <div className="timeline-item-content">
+      <div className="timeline-item-content w-full">
         <span 
           className="px-2 rounded-md mb-3 text-xs" 
           style={{ background: data.category.color }}

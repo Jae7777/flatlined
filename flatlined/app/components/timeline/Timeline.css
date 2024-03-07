@@ -11,6 +11,14 @@
     width: 4px;
     height: 100%;
   }
+  .timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    position: relative;
+    margin: 10px 0;
+    width: 50%;
+  }
   .timeline-item:nth-child(odd) {
     align-self: flex-end;
     justify-content: flex-start;
@@ -30,6 +38,7 @@
     max-width: 70%;
     text-align: right;
   }
+  /* triangle */
   .timeline-item-content::after {
     content: ' ';
     background-color: #20202A;
@@ -51,11 +60,6 @@
     right: auto;
     left: -7.5px;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
-  }
-
-  .timeline-item:nth-child(odd) .timeline-item-content .tag {
-      left: auto;
-      right: 5px;
   }
 
   .timeline-item-content .circle {
