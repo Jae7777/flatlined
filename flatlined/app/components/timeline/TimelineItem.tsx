@@ -23,22 +23,30 @@ const TimelineItem: React.FC<TimelineItemProp> = ({
     <div className="
       timeline-item
       flex items-end pr-[30px] relative
-      my-[10px] w-1/2
+      my-[10px] w-1/2 text-white
     ">
       <div className="timeline-item-content">
-        <span className="" style={{ background: data.category.color }}>
+        <span 
+          className="px-2 rounded-md mb-3 text-xs" 
+          style={{ background: data.category.color }}
+        >
           {data.category.tag}
         </span>
         
-        <time>{`${data.startdate} - ${data.enddate}`}</time>
-        <p>{data.text}</p>
+        <time className='text-xs text-neutral-400'>
+          {`${data.startdate} - ${data.enddate}`}
+        </time>
+        <p className='py-4 text-sm'>
+          {data.text}
+        </p>
         {data.link && (
           <a
             href={data.link.url}
             target="_blank"
             rel="noopener noreferrer"
+            className='text-xs hover:underline'
           >
-              {data.link.text}
+              {`${data.link.text} ►`}
           </a>
         )}
         <span className="circle" />
