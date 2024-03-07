@@ -22,7 +22,7 @@ const SideBar: React.FC<SideBarProps> = ({
 }) => {
   return (
     <div className={`
-      h-[90%] fixed border-r border-null-1 mt-[40px]
+      h-[90%] fixed border-r border-null-1 mt-[50px]
       text-center items-center px-4 duration-300 w-[250px]
       ${isToggled ? 'left-[0px]' : 'left-[-200px]'}
     `}>
@@ -42,30 +42,28 @@ const SideBar: React.FC<SideBarProps> = ({
       }
 
       <div className={`overflow-y-auto overscroll-none h-full`}>
-        <div className={`bg-null-sidebar-head`}>
-          <div className='py-5'>
-            <div className='relative rounded-full h-[60px] w-[60px] mx-auto'>
-              <Image
-                src='/headshot.png'
-                fill
-                alt=''
-                className='rounded-full'
-              />
-            </div>
-            <div className={`
-              ${font.className} text-[14px] 
-              text-cyberyellow text-center
-              pt-3 pb-2
-            `}>
-              {`Justin Chen`}
-            </div>
-            <div className='text-[12px] px-2 text-neutral-400 text-wrap'>
-              Projects & Portfolio
-            </div>
+        <div className={`bg-null-sidebar-head rounded-md py-5`}>
+          <div className='relative rounded-full h-[60px] w-[60px] mx-auto'>
+            <Image
+              src='/headshot.png'
+              fill
+              alt=''
+              className='rounded-full'
+            />
           </div>
-          
-          <FileExplorer setToggledFalse={setToggledFalse}/>
+          <div className={`
+            ${font.className} text-[14px] 
+            text-cyberyellow text-center
+            pt-3 pb-2
+          `}>
+            {`Justin Chen`}
+          </div>
+          <div className='text-[12px] px-2 text-neutral-400 text-wrap'>
+            Projects & Portfolio
+          </div>
         </div>
+
+        <FileExplorer setToggledFalse={setToggledFalse}/> 
 
       </div>
     </div>

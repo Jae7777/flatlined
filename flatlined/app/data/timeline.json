@@ -1,157 +1,50 @@
 [
   {
-    "text": "Such Life",
-    "startdate": "Feb 08 2023",
-    "enddate": "Apr 24 2023",
+    "text": "Fly Right",
+    "startdate": "Feb 16 2024",
+    "enddate": "Feb 21 2024",
     "category": {
       "tag": "Project",
-      "color": "#fccbfe"
+      "color": "#aa5a9c"
     },
-    "link": {
-      "url": "https://www.youtube.com/watch?v=mop6g-c5HEY",
-      "text": "View video"
-    }
+    "link": null
   },
   {
-    "text": "Intro to Tkinter",
-    "startdate": "May 05 2023",
-    "enddate": "May 06 2023",
-    "category": {
-      "tag": "Learning",
-      "color": "#ffcf49"
-    },
-    "link": {
-      "url": "https://www.youtube.com/watch?v=mop6g-c5HEY",
-      "text": "View video"
-    }
-  },
-  {
-    "text": "Intro to Pygame",
-    "startdate": "May 07 2023",
-    "enddate": "May 08 2023",
-    "category": {
-      "tag": "Learning",
-      "color": "#ffcf49"
-    },
-    "link": {
-      "url": "https://www.youtube.com/watch?v=AY9MnQ4x3zk",
-      "text": "View video"
-    }
-  },
-  {
-    "text": "Scrimba's React Bootcamp",
-    "startdate": "May 10 2023",
-    "enddate": "June 15 2023",
-    "category": {
-      "tag": "Learning",
-      "color": "#ffcf49"
-    },
-    "link": {
-      "url": "https://scrimba.com/learn/learnreact",
-      "text": "View course"
-    }
-  },
-  {
-    "text": "Work at Mayan Mobile Marketing",
-    "startdate": "May 11 2023",
-    "enddate": "Aug 18 2023",
-    "category": {
-      "tag": "Experience",
-      "color": "#61dbfb"
-    },
-    "link": {
-      "url": "https://www.mayanmobilemarketing.com/",
-      "text": "Company website"
-    }
-  },
-  {
-    "text": "Started developing Mayflower",
-    "startdate": "May 13 2023",
-    "enddate": "Aug 28 2023",
+    "text": "Common Place",
+    "startdate": "Feb 13 2024",
+    "enddate": "Present",
     "category": {
       "tag": "Project",
-      "color": "#fccbfe"
+      "color": "#aa5a9c"
     },
     "link": {
-      "url": "https://github.com/Jae7777/MayFlower",
-      "text": "Github"
+      "url": "https://common-place.vercel.app/",
+      "text": "View website"
     }
   },
   {
-    "text": "Prodigy Health Plus Contract",
-    "startdate": "May 30 2023",
-    "enddate": "June 20 2023",
+    "text": "Microsoft Soundscape",
+    "startdate": "Sept 12 2023",
+    "enddate": "Dec 18 2023",
     "category": {
-      "tag": "Experience",
-      "color": "#61dbfb"
+      "tag": "Project",
+      "color": "#aa5a9c"
     },
     "link": {
-      "url": "https://www.prodigyhealthplus.com/",
-      "text": "View Website"
+      "url": "https://github.com/Jae7777/soundscape-authoring-tool",
+      "text": "View Github"
     }
   },
   {
-    "text": "Prodigy Health Plus Contract",
-    "startdate": "May 30 2023",
-    "enddate": "June 20 2023",
+    "text": "Quest List",
+    "startdate": "August 28 2023",
+    "enddate": "Present",
     "category": {
-      "tag": "Experience",
-      "color": "#61dbfb"
+      "tag": "Project",
+      "color": "#aa5a9c"
     },
     "link": {
-      "url": "https://www.prodigyhealthplus.com/",
-      "text": "View Website"
-    }
-  },
-  {
-    "text": "Fat Jays Contract",
-    "startdate": "June 15 2023",
-    "enddate": "June 25 2023",
-    "category": {
-      "tag": "Experience",
-      "color": "#61dbfb"
-    },
-    "link": {
-      "url": "https://fatjaysnj.com/",
-      "text": "View Website"
-    }
-  },
-  {
-    "text": "NuYou Define Studio Contract",
-    "startdate": "July 01 2023",
-    "enddate": "July 13 2023",
-    "category": {
-      "tag": "Experience",
-      "color": "#61dbfb"
-    },
-    "link": {
-      "url": "https://www.nuyoudefine.com/",
-      "text": "View Website"
-    }
-  },
-  {
-    "text": "The ATG Contract",
-    "startdate": "July 13 2023",
-    "enddate": "July 27 2023",
-    "category": {
-      "tag": "Experience",
-      "color": "#61dbfb"
-    },
-    "link": {
-      "url": "https://www.theoneatg.com/",
-      "text": "View Website"
-    }
-  },
-  {
-    "text": "Hunters Cove Productions Contract",
-    "startdate": "July 24 2023",
-    "enddate": "Aug 5 2023",
-    "category": {
-      "tag": "Experience",
-      "color": "#61dbfb"
-    },
-    "link": {
-      "url": "https://www.hunterscoveproductions.com/",
+      "url": "https://www.questlist.net/",
       "text": "View Website"
     }
   },
@@ -161,7 +54,7 @@
     "enddate": "Aug 12 2023",
     "category": {
       "tag": "Experience",
-      "color": "#61dbfb"
+      "color": "#3db3d0"
     },
     "link": {
       "url": "https://www.unitedhomeconstructioncorp.com/",
@@ -169,52 +62,159 @@
     }
   },
   {
-    "text": "Quest List",
-    "startdate": "August 28 2023",
-    "enddate": "Present",
+    "text": "Hunters Cove Productions Contract",
+    "startdate": "July 24 2023",
+    "enddate": "Aug 5 2023",
     "category": {
-      "tag": "Project",
-      "color": "#fccbfe"
+      "tag": "Experience",
+      "color": "#3db3d0"
     },
     "link": {
-      "url": "https://www.questlist.net/",
+      "url": "https://www.hunterscoveproductions.com/",
       "text": "View Website"
     }
   },
   {
-    "text": "Microsoft Soundscape",
-    "startdate": "Sept 12 2023",
-    "enddate": "Dec 18 2023",
+    "text": "The ATG Contract",
+    "startdate": "July 13 2023",
+    "enddate": "July 27 2023",
     "category": {
-      "tag": "Project",
-      "color": "#fccbfe"
+      "tag": "Experience",
+      "color": "#3db3d0"
     },
     "link": {
-      "url": "https://github.com/Jae7777/soundscape-authoring-tool",
-      "text": "View Github"
+      "url": "https://www.theoneatg.com/",
+      "text": "View Website"
     }
   },
   {
-    "text": "Common Place",
-    "startdate": "Feb 13 2024",
-    "enddate": "Present",
+    "text": "NuYou Define Studio Contract",
+    "startdate": "July 01 2023",
+    "enddate": "July 13 2023",
     "category": {
-      "tag": "Project",
-      "color": "#fccbfe"
+      "tag": "Experience",
+      "color": "#3db3d0"
     },
     "link": {
-      "url": "https://common-place.vercel.app/",
-      "text": "View website"
+      "url": "https://www.nuyoudefine.com/",
+      "text": "View Website"
     }
   },
   {
-    "text": "Fly Right",
-    "startdate": "Feb 16 2024",
-    "enddate": "Feb 21 2024",
+    "text": "Fat Jays Contract",
+    "startdate": "June 15 2023",
+    "enddate": "June 25 2023",
+    "category": {
+      "tag": "Experience",
+      "color": "#3db3d0"
+    },
+    "link": {
+      "url": "https://fatjaysnj.com/",
+      "text": "View Website"
+    }
+  },
+  {
+    "text": "Prodigy Health Plus Contract",
+    "startdate": "May 30 2023",
+    "enddate": "June 20 2023",
+    "category": {
+      "tag": "Experience",
+      "color": "#3db3d0"
+    },
+    "link": {
+      "url": "https://www.prodigyhealthplus.com/",
+      "text": "View Website"
+    }
+  },
+  {
+    "text": "Prodigy Health Plus Contract",
+    "startdate": "May 30 2023",
+    "enddate": "June 20 2023",
+    "category": {
+      "tag": "Experience",
+      "color": "#3db3d0"
+    },
+    "link": {
+      "url": "https://www.prodigyhealthplus.com/",
+      "text": "View Website"
+    }
+  },
+  {
+    "text": "Started developing Mayflower",
+    "startdate": "May 13 2023",
+    "enddate": "Aug 28 2023",
     "category": {
       "tag": "Project",
-      "color": "#fccbfe"
+      "color": "#aa5a9c"
     },
-    "link": null
+    "link": {
+      "url": "https://github.com/Jae7777/MayFlower",
+      "text": "Github"
+    }
+  },
+  {
+    "text": "Work at Mayan Mobile Marketing",
+    "startdate": "May 11 2023",
+    "enddate": "Aug 18 2023",
+    "category": {
+      "tag": "Experience",
+      "color": "#3db3d0"
+    },
+    "link": {
+      "url": "https://www.mayanmobilemarketing.com/",
+      "text": "Company website"
+    }
+  },
+  {
+    "text": "Scrimba's React Bootcamp",
+    "startdate": "May 10 2023",
+    "enddate": "June 15 2023",
+    "category": {
+      "tag": "Learning",
+      "color": "#f58b60"
+    },
+    "link": {
+      "url": "https://scrimba.com/learn/learnreact",
+      "text": "View course"
+    }
+  },
+  {
+    "text": "Intro to Pygame",
+    "startdate": "May 07 2023",
+    "enddate": "May 08 2023",
+    "category": {
+      "tag": "Learning",
+      "color": "#f58b60"
+    },
+    "link": {
+      "url": "https://www.youtube.com/watch?v=AY9MnQ4x3zk",
+      "text": "View video"
+    }
+  },
+  {
+    "text": "Intro to Tkinter",
+    "startdate": "May 05 2023",
+    "enddate": "May 06 2023",
+    "category": {
+      "tag": "Learning",
+      "color": "#f58b60"
+    },
+    "link": {
+      "url": "https://www.youtube.com/watch?v=mop6g-c5HEY",
+      "text": "View video"
+    }
+  },
+  {
+    "text": "Such Life",
+    "startdate": "Feb 08 2023",
+    "enddate": "Apr 24 2023",
+    "category": {
+      "tag": "Project",
+      "color": "#aa5a9c"
+    },
+    "link": {
+      "url": "https://www.youtube.com/watch?v=mop6g-c5HEY",
+      "text": "View video"
+    }
   }
 ]

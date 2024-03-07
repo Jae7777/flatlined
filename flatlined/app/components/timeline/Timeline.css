@@ -3,40 +3,24 @@
 @tailwind utilities;
 
 @layer components {
-  .timeline-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin: 40px 0;
-  }
-
   .timeline-container::after {
-      background-color: #e17b77;
-      content: '';
-      position: absolute;
-      left: calc(50% - 2px);
-      width: 4px;
-      height: 100%;
+    background-color: #e17b77;
+    content: '';
+    position: absolute;
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 100%;
   }
-  .timeline-item {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 30px;
-    position: relative;
-    margin: 10px 0;
-    width: 50%;
-  }
-
   .timeline-item:nth-child(odd) {
-      align-self: flex-end;
-      justify-content: flex-start;
-      padding-left: 30px;
-      padding-right: 0;
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 0;
   }
   .timeline-item-content {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: "0 0 5px #10101A";
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #20202A;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -48,7 +32,7 @@
   }
   .timeline-item-content::after {
     content: ' ';
-    background-color: #fff;
+    background-color: #20202A;
     box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
     position: absolute;
     right: -7.5px;
@@ -86,9 +70,9 @@
   }
 
   .timeline-item-content time {
-      color: #777;
+      color: #b7afaf;
       font-size: 12px;
-      font-weight: bold;
+      font-weight: light;
   }
 
   .timeline-item-content p {

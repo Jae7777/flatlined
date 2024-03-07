@@ -10,7 +10,7 @@ body,
 
 @layer components {
   .main-body-toggled {
-    @apply py-8;
+    @apply py-[50px];
     @apply px-12;
     @apply ml-[250px];
     @apply xs:block hidden;
@@ -32,8 +32,8 @@ body,
     box-shadow: 0 0 25px 25px #FFFFFF;
   }
   .main-body-untoggled {
-    @apply py-8;
     @apply px-12;
+    @apply py-[50px];
     @apply ml-[40px];
     @apply block;
     @apply duration-300
