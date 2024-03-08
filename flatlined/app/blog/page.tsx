@@ -11,7 +11,7 @@ const BlogPage = () => {
             src='/bar.jpg'
             alt='picture of a Cyberpunk Bar'
             fill
-            className='object-fit'
+            className='object-cover'
             sizes='100vw'
             priority={true}
           />
