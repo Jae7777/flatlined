@@ -38,8 +38,8 @@ const BlogPage = () => {
             src="/bar.jpg"
             alt="picture of a Cyberpunk Bar"
             fill
-            className="object-fit"
-            sizes="100vw"
+            className='object-cover'
+            sizes='100vw'
             priority={true}
           />
         </div>
@@ -55,4 +55,4 @@ const BlogPage = () => {
   );
 };
 
-export default BlogPage;
+export default BlogPage
