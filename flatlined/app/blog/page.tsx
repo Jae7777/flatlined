@@ -31,7 +31,6 @@ const BlogPage = () => {
   const router = useRouter();
   return (
     <div className="text-white px-6 pt-16 pb-8 max-w-[1000px] mx-auto">
-      {/* list of blogs */}
       <div className="responsive-screen-md">
         <div className="relative w-full h-full">
           <Image
