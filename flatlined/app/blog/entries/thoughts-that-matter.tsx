@@ -3,13 +3,13 @@
 const Blog1 = () => {
   return (
     <div>
-      <p className="italic text-neutral-300 responsive-text-xs">
+      <p className="italic text-neutral-300 text-sm">
         {`12:11 AM, 06 March 2024`}
       </p>
 
-      <p className="pt-6 pb-2 responsive-text-md">Thoughts that matter</p>
+      <p className="pt-6 pb-2 text-lg">Thoughts that matter</p>
 
-      <p className="responsive-text-sm text-neutral-400">
+      <p className="text-md text-neutral-400">
         {'The idea of a blog was inspired by Nick Vercillo, a film director and producer that I look up to. Not because I secretly aspire to be a film director but am living the numbing life of a CS major, but because of how well connected he seems to be with his inner self.'}
         <br/><br/>
         {`Imposter syndrome is something that I've been struggling with as long as I can remember. Maybe it's due to my strict Chinese upbringing, or perhaps due to the fact that writing past midnight brings out supressed sentimentality. I still recall the feeling I felt during my first CS lecture in university, where to my left and right were CS geeks persumably hacking into the mainframe of the campus servers and I'm left wondering what the hell a class object was.`}
