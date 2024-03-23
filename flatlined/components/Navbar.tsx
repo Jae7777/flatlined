@@ -11,7 +11,7 @@ const Navbar = () => {
   const email = 'jchen4086@gmail.com'
 
   return (
-    <div className='fixed w-full z-50 h-[40px] text-center bg-null-body'>
+    <div className='fixed w-full z-50 h-[40px] text-center bg-background'>
       <div className='
         h-full mx-auto flex
         items-center justify-center

@@ -1,10 +1,10 @@
 import SideBar from "../sidebar/Sidebar"
-import portfolio from '../../data/portfolio.json'
+import portfolio from '../../app/data/portfolio.json'
 import Showcase from "../body/Showcase"
 import LinkButton from "../LinkButton"
 import LogoGrid from "../body/LogoGrid"
 import Subtitle from "../body/Subtitle"
-import logoURLs from '../../data/logos.json'
+import logoURLs from '../../app/data/logos.json'
 import Text from "../body/Text"
 
 interface ProjectLayoutProps {

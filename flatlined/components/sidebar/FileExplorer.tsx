@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import File from "./File"
-import portfolio from '../../data/portfolio.json'
+import portfolio from '../../app/data/portfolio.json'
 import { useRouter, useSearchParams } from "next/navigation"
 
 interface FileExplorerProps {

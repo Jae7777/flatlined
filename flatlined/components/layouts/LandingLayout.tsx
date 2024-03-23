@@ -3,7 +3,7 @@ import Image from "next/image"
 import { BiDownload, BiMailSend } from "react-icons/bi"
 import Subtitle from "../body/Subtitle"
 import LogoGrid from "../body/LogoGrid"
-import logos from "../../data/logos.json"
+import logos from "../../app/data/logos.json"
 import Timeline from "../timeline/Timeline"
 
 const hero = Fira_Code({

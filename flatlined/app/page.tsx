@@ -1,9 +1,9 @@
 'use client'
 
-import SideBar from "./components/sidebar/Sidebar";
+import SideBar from "../components/sidebar/Sidebar";
 import { useEffect, useState } from "react";
 import { Fira_Code } from "next/font/google";
-import BodyContent from "./components/layouts/BodyContent";
+import BodyContent from "../components/layouts/BodyContent";
 
 const hero = Fira_Code({
   subsets: ['latin'],

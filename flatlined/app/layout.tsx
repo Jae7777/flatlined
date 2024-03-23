@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import { 
-  Press_Start_2P, Syncopate, Roboto_Mono,
-  Poppins 
+  Poppins
 } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
+import { Toaster } from "@/components/ui/toaster";
 
-const font = Poppins({
+const poppins = Poppins({
   subsets: ["latin"],
-  weight: ['400', '700']
+  weight: ['400', '700'],
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -24,10 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${font.className} bg-null-body text-white`}>
+      <body className={`${poppins.className} bg-background text-white`}>
         <div className=''>
           <Navbar/>
           {children}
+          <Toaster />
           <Analytics />
         </div>
       </body>
