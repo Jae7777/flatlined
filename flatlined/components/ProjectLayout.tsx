@@ -1,11 +1,11 @@
-import SideBar from "../sidebar/Sidebar"
-import portfolio from '../../app/data/portfolio.json'
-import Showcase from "../body/Showcase"
-import LinkButton from "../LinkButton"
-import LogoGrid from "../body/LogoGrid"
-import Subtitle from "../body/Subtitle"
-import logoURLs from '../../app/data/logos.json'
-import Text from "../body/Text"
+import SideBar from "./sidebar/Sidebar"
+import portfolio from '../app/data/portfolio.json'
+import Showcase from "./body/Showcase"
+import LinkButton from "./LinkButton"
+import LogoGrid from "./body/LogoGrid"
+import Subtitle from "./body/Subtitle"
+import logoURLs from '../app/data/logos.json'
+import Text from "./body/Text"
 
 interface ProjectLayoutProps {
   isToggled: boolean
@@ -20,7 +20,7 @@ const ProjectLayout: React.FC<ProjectLayoutProps> = ({
   const skills = project.skillset
   const logoObjects = skills.map((skill) => {
     const url = logoURLs[skill as keyof typeof logoURLs]
-    return {name: skill, path: url}
+    return { name: skill, path: url }
   })
 
   return (
@@ -31,7 +31,7 @@ const ProjectLayout: React.FC<ProjectLayoutProps> = ({
         isLive={project.caniframe}
         name={project.name}
       />
-      
+
       <div className='flex flex-wrap max-w-[250px] mx-auto py-3'>
         <LinkButton
           url={project.url}
@@ -62,13 +62,13 @@ const ProjectLayout: React.FC<ProjectLayoutProps> = ({
         />
         <Text
           content={`Collaborators: 
-          ${'collaborators' in project 
-          ? project.collaborators.join(', ')
-          : 'None'}`}
+          ${'collaborators' in project
+              ? project.collaborators.join(', ')
+              : 'None'}`}
           styling='text-cyber-2 text-sm'
         />
       </div>
-      
+
 
       <div className='pt-6'>
         <Subtitle content='SKILLS' />

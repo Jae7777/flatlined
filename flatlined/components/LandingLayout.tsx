@@ -1,10 +1,10 @@
 import { Fira_Code } from "next/font/google"
 import Image from "next/image"
 import { BiDownload, BiMailSend } from "react-icons/bi"
-import Subtitle from "../body/Subtitle"
-import LogoGrid from "../body/LogoGrid"
-import logos from "../../app/data/logos.json"
-import Timeline from "../timeline/Timeline"
+import Subtitle from "./body/Subtitle"
+import LogoGrid from "./body/LogoGrid"
+import logos from "../app/data/logos.json"
+import Timeline from "./timeline/Timeline"
 
 const hero = Fira_Code({
   subsets: ['latin'],
@@ -12,7 +12,7 @@ const hero = Fira_Code({
 })
 
 
-interface LandingLayoutProps{
+interface LandingLayoutProps {
   isToggled: boolean
 }
 
@@ -21,32 +21,32 @@ const LandingLayout: React.FC<LandingLayoutProps> = ({
 }) => {
   const logoObjects = Object.entries(logos).map(
     (obj) => {
-      return {name: obj[0], path: obj[1]}
+      return { name: obj[0], path: obj[1] }
     }
   )
-  
+
   return (
     <div>
       <div className={`
         ${hero.className}
-        ${isToggled 
+        ${isToggled
           ? 'responsive-screen-sm'
           : 'responsive-screen-md'
         }
       `}>
-        <div className='w-full h-full relative' style={{boxShadow: "0 0 10px #101215"}}>
+        <div className='w-full h-full relative' style={{ boxShadow: "0 0 10px #101215" }}>
           <div className='opacity-40'>
             <Image
               src='/hero.jpg'
               alt='hero'
               fill
-              style={{ objectFit: 'cover'}}
+              style={{ objectFit: 'cover' }}
               sizes='100vw'
               priority={true}
             />
           </div>
-          <div 
-            style={{textShadow: '2px 2px 5px'}}
+          <div
+            style={{ textShadow: '2px 2px 5px' }}
             className={`
               relative text-center text-white text top-1/2
               ${isToggled ? 'responsive-text-sm' : 'responsive-text-md'}
@@ -64,7 +64,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = ({
           {`I'm a freelance web developer, hobbyist game dev, and a music enthusiast.
           I have experience in leading ambitious projects, and am versatile in my skill set.
           I thrive in the realm where technology, creativity, and innovation intersect.`}
-          <br/> <br/>
+          <br /> <br />
           {`Writing code is a bit like orchestrating a music piece;
           It starts with a defining motif and develops through endless revisions.
           At its core is a desire to create something`}
@@ -73,13 +73,13 @@ const LandingLayout: React.FC<LandingLayoutProps> = ({
       </div>
       <div className='flex flex-wrap gap-6 max-w-[400px] py-3'>
         <a href="/docs/Resume.pdf" download className='button-1'>
-            {`Resumé`}
-            <BiDownload/>
+          {`Resumé`}
+          <BiDownload />
         </a>
 
         <a href='mailto:jchen4086@gmail.com' className='button-2'>
           {`Contact`}
-          <BiMailSend/>
+          <BiMailSend />
         </a>
       </div>
 
@@ -96,7 +96,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = ({
         <Subtitle content='TIMELINE' />
       </div>
 
-      <Timeline/>
+      <Timeline />
     </div>
   )
 }

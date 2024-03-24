@@ -3,7 +3,9 @@
 import SideBar from "../components/sidebar/Sidebar";
 import { useEffect, useState } from "react";
 import { Fira_Code } from "next/font/google";
-import BodyContent from "../components/layouts/BodyContent";
+import { useRouter } from "next/navigation";
+import LandingLayout from "@/components/LandingLayout";
+import ProjectLayout from "@/components/ProjectLayout";
 
 const hero = Fira_Code({
   subsets: ['latin'],
@@ -44,4 +46,40 @@ export default function Home({
       </div>
     </div>
   );
+}
+
+const BodyContent = ({
+  isToggled,
+  project_slug
+}: {
+  isToggled: boolean
+  project_slug: string | undefined
+}) => {
+  const router = useRouter()
+  const [project, setProject] = useState('')
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    project_slug ? setProject(project_slug) : setProject('')
+    setIsLoading(false)
+  }, [router, project_slug, project, isLoading])
+
+  if (isLoading) {
+    // todo: skeleton of page
+    return <div>Loading...</div>
+  }
+
+  return (
+    <div>
+      {project == ''
+        ? <LandingLayout
+            isToggled={isToggled}
+          />
+        : <ProjectLayout
+            isToggled={isToggled}
+            project_key={project}
+          />
+      }
+    </div>
+  )
 }
