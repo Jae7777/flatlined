@@ -1,5 +1,31 @@
 [
   {
+    "text": "IEEE Hack-A-Damien 2024 @UAlbany",
+    "startdate": "Apr 13 2024",
+    "enddate": "Apr 14 2024",
+    "category": {
+      "tag": "Event",
+      "color": "#f58b60"
+    },
+    "link": {
+      "url": "https://discord.gg/JN4JQ9hu4R",
+      "text": "See Discord"
+    }
+  },
+  {
+    "text": "World Edit",
+    "startdate": "Mar 25 2024",
+    "enddate": "Present",
+    "category": {
+      "tag": "Project",
+      "color": "#aa5a9c"
+    },
+    "link":{
+      "url": "https://www.worlded.it/",
+      "text": "View website"
+    }
+  },
+  {
     "text": "Fly Right",
     "startdate": "Feb 16 2024",
     "enddate": "Feb 21 2024",

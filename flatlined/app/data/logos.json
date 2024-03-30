@@ -33,5 +33,6 @@
   "Git": "/logos/git.svg",
   "Unreal Engine": "/logos/unrealengine.svg",
   "Photoshop": "/logos/photoshop.svg",
-  "Tensorflow": "/logos/tensorflow.svg"
+  "Tensorflow": "/logos/tensorflow.svg",
+  "Godot": "/logos/godot.svg"
 }

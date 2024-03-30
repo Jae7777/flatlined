@@ -46,7 +46,7 @@ const ProjectLayout: React.FC<ProjectLayoutProps> = ({
           />
           <div className='text-right space-y-2'>
             <Text
-              content={`${project.startDate} - ${project.endDate}`}
+              content={`${project.startDate}`}
               styling='responsive-text-xs text-cyber-2'
             />
             <Text
