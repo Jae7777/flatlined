@@ -45,10 +45,11 @@ const SideBar: React.FC<SideBarProps> = ({
         <div className={`bg-null-sidebar-head rounded-md py-5`}>
           <div className='relative rounded-full h-[60px] w-[60px] mx-auto'>
             <Image
-              src='/headshot.png'
+              src='/headshot2.png'
               fill
               alt=''
-              className='rounded-full'
+              className='rounded-full object-cover'
+              sizes="100px"
             />
           </div>
           <div className={`
