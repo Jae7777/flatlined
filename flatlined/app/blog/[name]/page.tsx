@@ -24,7 +24,7 @@ const BlogEntry = ({ params }: { params: { name: string } }) => {
         <IoIosArrowBack className="navbar-item" color="#feb080" />
         Back
       </div>
-      <div className="border-[1px] px-8 py-6 shadow-xl border-null-sidebar-body rounded-lg">
+      <div className="border-[2px] px-8 py-6 shadow-xl border-null-sidebar-body rounded-lg">
         <DynamicBlog />
       </div>
     </div>
