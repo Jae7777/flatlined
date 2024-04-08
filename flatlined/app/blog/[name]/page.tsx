@@ -14,7 +14,7 @@ const BlogEntry = ({ params }: { params: { name: string } }) => {
   const router = useRouter();
 
   return (
-    <div className="text-white px-[24px] pt-16 pb-8 md:px-[48px] lg:px-[72px] xl:px-[104px]">
+    <div className="text-white pt-16 pb-8 max-w-[850px] mx-auto px-6 leading-8">
       <div
         className="
           pb-6 flex text-cyber-2 items-center clickable-dark w-fit px-2
@@ -24,7 +24,9 @@ const BlogEntry = ({ params }: { params: { name: string } }) => {
         <IoIosArrowBack className="navbar-item" color="#feb080" />
         Back
       </div>
-      <DynamicBlog />
+      <div className="border-[1px] px-8 py-6 shadow-xl border-null-sidebar-body rounded-lg">
+        <DynamicBlog />
+      </div>
     </div>
   );
 };
