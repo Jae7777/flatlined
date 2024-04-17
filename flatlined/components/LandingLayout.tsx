@@ -60,7 +60,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = ({
         <div className='responsive-text-sm text-cybercyan'>
           {`Hey, I'm Justin`}
         </div>
-        <div className='text-offwhite py-4'>
+        <div className='text-offwhite py-4 leading-5'>
           {`I'm a freelance web developer, hobbyist game dev, and a music enthusiast.
           I have experience in leading ambitious projects, and am versatile in my skill set.
           I thrive in the realm where technology, creativity, and innovation intersect.`}

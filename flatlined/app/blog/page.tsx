@@ -1,9 +1,7 @@
-"use client";
+'use client'
 
 import Image from "next/image";
-import Blog1 from "./entries/thoughts-that-matter";
 import { useRouter } from "next/navigation";
-import Head from "next/head";
 
 const BlogButton = ({
   title,
@@ -31,40 +29,30 @@ const BlogButton = ({
 const BlogPage = () => {
   const router = useRouter();
   return (
-    <div>
-      <Head>
-        <title>Justin Chen</title>
-        <meta
-          name="description"
-          content="I write code that does cool things. Here are some of my works."
-          key="desc"
-        />
-      </Head>
-      <div className="text-white px-6 pt-16 pb-8 max-w-[1000px] mx-auto">
-        <div className="responsive-screen-md">
-          <div className="relative w-full h-full">
-            <Image
-              src="/bar.jpg"
-              alt="picture of a Cyberpunk Bar"
-              fill
-              className='object-cover'
-              sizes='100vw'
-              priority={true}
-            />
-          </div>
-        </div>
-        <div className="pt-6 space-y-3">
-          {/* <BlogButton
-            title="The Dread of Being Independent"
-            date="06 April 2024"
-            redirect={() => router.push("/blog/the-dread-of-being-independent")}
-          /> */}
-          <BlogButton
-            title="Thoughts That Matter"
-            date="06 March 2024"
-            redirect={() => router.push("/blog/thoughts-that-matter")}
+    <div className="text-white px-6 pt-16 pb-8 max-w-[1000px] mx-auto">
+      <div className="responsive-screen-md">
+        <div className="relative w-full h-full">
+          <Image
+            src="/bar.jpg"
+            alt="picture of a Cyberpunk Bar"
+            fill
+            className='object-cover'
+            sizes='100vw'
+            priority={true}
           />
         </div>
+      </div>
+      <div className="pt-6 space-y-3">
+        {/* <BlogButton
+          title="The Dread of Being Independent"
+          date="06 April 2024"
+          redirect={() => router.push("/blog/the-dread-of-being-independent")}
+        /> */}
+        <BlogButton
+          title="Thoughts That Matter"
+          date="06 March 2024"
+          redirect={() => router.push("/blog/thoughts-that-matter")}
+        />
       </div>
     </div>
   );

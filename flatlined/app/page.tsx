@@ -2,16 +2,9 @@
 
 import SideBar from "../components/sidebar/Sidebar";
 import { useEffect, useState } from "react";
-import { Fira_Code } from "next/font/google";
 import { useRouter } from "next/navigation";
 import LandingLayout from "@/components/LandingLayout";
 import ProjectLayout from "@/components/ProjectLayout";
-import Head from "next/head";
-
-const hero = Fira_Code({
-  subsets: ['latin'],
-  weight: ['500']
-})
 
 export default function Home({ 
   searchParams 
@@ -30,14 +23,6 @@ export default function Home({
 
   return (
     <div className='h-full'>
-      <Head>
-        <title>Justin Chen</title>
-        <meta
-          name="description"
-          content="I write code that does cool things. Here are some of my works."
-          key="desc"
-        />
-      </Head>
       <SideBar
         onToggle={() => {setIsToggled(!isToggled)}}
         isToggled={isToggled}

@@ -16,6 +16,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Flatlined",
   description: "Turning the world to code.",
+  icons: [{ rel: "icon", url: "/favicon.svg" }],
 };
 
 export default function RootLayout({
