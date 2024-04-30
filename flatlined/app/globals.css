@@ -6,6 +6,7 @@ html,
 body,
 :root {
   height:100%;
+  font-size: 100%;
 }
 
 @layer components {
@@ -83,19 +84,19 @@ body,
     @apply duration-300;
   }
   .responsive-text-xxs {
-    font-size: 0.625rem;
+    font-size: 70%;
   }
   .responsive-text-xs {
-    font-size: 0.75rem;
+    font-size: 80%;
   }
   .responsive-text-sm {
-    font-size: 0.875rem;
+    font-size: 90%;
   }
   .responsive-text-md {
-    font-size: 1rem;
+    font-size: 100%;
   }
   .responsive-text-lg {
-    font-size: 1.125rem;
+    font-size: 110rem;
   }
   .responsive-screen-sm {
     height: 200px;
@@ -114,33 +115,33 @@ body,
     width: 100%;
   }
   @media (min-width: 640px) { 
-    .responsive-text-xxs { font-size: 0.75rem; }
-    .responsive-text-xs { font-size: 0.875rem; }
-    .responsive-text-sm { font-size: 1rem; }
-    .responsive-text-md { font-size: 1.125rem; }
-    .responsive-text-lg { font-size: 1.25rem; }
+    .responsive-text-xxs { font-size: 75%; }
+    .responsive-text-xs { font-size: 85%; }
+    .responsive-text-sm { font-size: 95%; }
+    .responsive-text-md { font-size: 105%; }
+    .responsive-text-lg { font-size: 115%; }
     .responsive-screen-sm { height: 250px; }
     .responsive-screen-md { height: 300px; }
     .responsive-screen-lg { height: 350px; }
     .responsive-screen-xl { height: 400px; }
   }
   @media (min-width: 768px) { 
-    .responsive-text-xxs { font-size: 0.875rem; }
-    .responsive-text-xs { font-size: 1rem; }
-    .responsive-text-sm { font-size: 1.125rem; }
-    .responsive-text-md { font-size: 1.25rem; }
-    .responsive-text-lg { font-size: 1.5rem; }
+    .responsive-text-xxs { font-size: 80%; }
+    .responsive-text-xs { font-size: 90%; }
+    .responsive-text-sm { font-size: 100%; }
+    .responsive-text-md { font-size: 110%; }
+    .responsive-text-lg { font-size: 120%; }
     .responsive-screen-sm { height: 300px; }
     .responsive-screen-md { height: 350px; }
     .responsive-screen-lg { height: 400px; }
     .responsive-screen-xl { height: 450px; }
   }
   @media (min-width: 1024px) { 
-    .responsive-text-xxs { font-size: 1rem; }
-    .responsive-text-xs { font-size: 1.125rem; }
-    .responsive-text-sm { font-size: 1.25rem; }
-    .responsive-text-md { font-size: 1.5rem; }
-    .responsive-text-lg { font-size: 2rem; }
+    .responsive-text-xxs { font-size: 85%; }
+    .responsive-text-xs { font-size: 95%; }
+    .responsive-text-sm { font-size: 105%; }
+    .responsive-text-md { font-size: 115%; }
+    .responsive-text-lg { font-size: 125%; }
     .responsive-screen-sm { height: 350px; }
     .responsive-screen-md { height: 400px; }
     .responsive-screen-lg { height: 450px; }

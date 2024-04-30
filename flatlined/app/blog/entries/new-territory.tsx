@@ -1,6 +1,6 @@
 
 
-const Blog1 = () => {
+const Blog2 = () => {
   return (
     <div>
       <p className="italic text-neutral-300 text-sm">
@@ -30,4 +30,4 @@ const Blog1 = () => {
   )
 }
 
-export default Blog1
+export default Blog2

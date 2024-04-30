@@ -56,7 +56,7 @@ const LandingLayout: React.FC<LandingLayoutProps> = ({
         </div>
       </div>
 
-      <div className=' pt-8 responsive-text-xxs'>
+      <div className=' pt-8 responsive-text-md'>
         <div className='responsive-text-sm text-cybercyan'>
           {`Hey, I'm Justin`}
         </div>
