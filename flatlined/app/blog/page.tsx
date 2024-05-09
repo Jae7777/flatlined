@@ -44,6 +44,11 @@ const BlogPage = () => {
       </div>
       <div className="pt-6 space-y-3">
         <BlogButton
+          title="My Father"
+          date="09 May 2024"
+          redirect={() => router.push("/blog/my-father")}
+        />
+        <BlogButton
           title="New Territory"
           date="29 April 2024"
           redirect={() => router.push("/blog/new-territory")}
