@@ -10,7 +10,14 @@ datasource db {
 model Project {
     id        String @id @default(auto()) @map("_id") @db.ObjectId
     name      String
+    url       String
+    caniframe Boolean
+    role      String
+    startDate String
+    status    String
+    skillset  String[]
+    description String
+    collaborators String[]
     createdAt DateTime @default(now())
-    updatedAt DateTime @updatedAt
 }
 
