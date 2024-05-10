@@ -23,14 +23,16 @@ export default function Home({
 
   return (
     <div className='h-full'>
-      <SideBar
-        onToggle={() => {setIsToggled(!isToggled)}}
-        isToggled={isToggled}
-        setToggledFalse={setToggledFalse}
-      />
       <div 
-        className={`sm:text-white
-          ${isToggled ? 'main-body-toggled' : 'main-body-untoggled'}
+        className={`
+        text-white
+          px-[10px]
+          md:px-[20px]
+          xl:px-[40px]
+          py-[50px]
+          
+          block
+          duration-300
         `}
       >
         <BodyContent

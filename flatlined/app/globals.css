@@ -10,13 +10,6 @@ body,
 }
 
 @layer components {
-  .main-body-toggled {
-    @apply py-[50px];
-    @apply px-12;
-    @apply ml-[250px];
-    @apply xs:block hidden;
-    @apply duration-300
-  }
   .dark-dot-pattern {
     background-color: #20202a;
     opacity: 1;
@@ -31,13 +24,6 @@ body,
     @apply bg-white;
     @apply opacity-10;
     box-shadow: 0 0 25px 25px #FFFFFF;
-  }
-  .main-body-untoggled {
-    @apply px-12;
-    @apply py-[50px];
-    @apply ml-[40px];
-    @apply block;
-    @apply duration-300
   }
   .clickable-dark {
     @apply cursor-pointer;
