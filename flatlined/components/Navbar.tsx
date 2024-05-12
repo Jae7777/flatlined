@@ -3,7 +3,6 @@
 import { redirect, useRouter } from "next/navigation"
 import { FaGithub, FaHouse, FaLinkedinIn } from "react-icons/fa6"
 import EmailIcon from "./EmailIcon"
-import { SiLivejournal } from "react-icons/si"
 import { IoIosJournal } from "react-icons/io"
 
 const Navbar = () => {
@@ -11,7 +10,7 @@ const Navbar = () => {
   const email = 'jchen4086@gmail.com'
 
   return (
-    <div className='fixed w-full z-50 h-[40px] text-center bg-background'>
+    <div className='fixed w-full z-50 h-[55px] text-center bg-background'>
       <div className='
         h-full mx-auto flex
         items-center justify-center
