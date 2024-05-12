@@ -1,81 +1,104 @@
-'use client'
 
-import SideBar from "../components/sidebar/Sidebar";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
-import LandingLayout from "@/components/LandingLayout";
-import ProjectLayout from "@/components/ProjectLayout";
+import { Fira_Code } from "next/font/google";
+import Image from "next/image";
+import { BiDownload, BiMailSend } from "react-icons/bi";
+import Subtitle from "@/components/body/Subtitle";
+import LogoGrid from "@/components/body/LogoGrid";
+import logos from "../app/data/logos.json";
+import Timeline from "@/components/timeline/Timeline";
+import getProjects from "@/actions/getProjects";
 
-export default function Home({ 
-  searchParams 
-}: {
-  searchParams: { [key: string]: string | undefined}
-}) {
-  const [isToggled, setIsToggled] = useState(false)
-  const setToggledFalse = () => {
-    setIsToggled(false)
-  }
+import ProjectsCarousel from "@/components/body/ProjectsCarousel";
 
-  useEffect(() => {
-    const width = window.innerWidth
-    if (width > 640) setIsToggled(true)
-  }, [])
+const fira_code = Fira_Code({
+  subsets: ["latin"],
+  weight: ["500"],
+});
+
+export const dynamic = "force-dynamic";
+
+export default async function Home() {
+  const projects = await getProjects({});
+
+  const logoObjects = Object.entries(logos).map((obj) => {
+    return { name: obj[0], path: obj[1] };
+  });
 
   return (
-    <div className='h-full'>
-      <div 
+    <div className="h-full">
+      <div
         className={`
-        text-white
-          px-[10px]
-          md:px-[20px]
-          xl:px-[40px]
-          py-[50px]
-          
           block
+          pt-[65px]
+          pb-[20px]
+          text-white
           duration-300
+          px-[40px]
+          md:px-[80px]
+          xl:px-[160px]
+          ${fira_code.className}
         `}
       >
-        <BodyContent
-          isToggled={isToggled}
-          project_slug={searchParams.project}
-        />
+        <div
+          className={`
+          responsive-screen-md
+        `}
+        >
+          <div
+            className="relative h-full w-full"
+            style={{ boxShadow: "0 0 10px #101215" }}
+          >
+            <div className="opacity-40">
+              <Image
+                src="/hero.jpg"
+                alt="hero"
+                fill
+                style={{ objectFit: "cover" }}
+                sizes="100vw"
+                priority={true}
+              />
+            </div>
+            <div
+              style={{ textShadow: "2px 2px 5px" }}
+              className={`
+                text responsive-text-md relative top-1/2 text-center
+                text-white
+            `}
+            >
+              {`Your human code machine.`}
+            </div>
+          </div>
+        </div>
+
+        <div className="flex-col text-center pt-6 pb-12 space-y-4">
+          <span className="text-cyber-1 text-xl">Latest Creations</span>
+          <ProjectsCarousel projects={projects} />
+        </div>
+
+        <div className="flex max-w-[400px] flex-wrap gap-6 py-3">
+          <a href="/docs/Resume.pdf" download className="button-1">
+            {`Resumé`}
+            <BiDownload />
+          </a>
+
+          <a href="mailto:jchen4086@gmail.com" className="button-2">
+            {`Contact`}
+            <BiMailSend />
+          </a>
+        </div>
+
+        <div className="pt-6">
+          <Subtitle content="SKILLS" />
+        </div>
+
+        <LogoGrid logos={logoObjects} />
+
+        <div className="pt-6">
+          <Subtitle content="TIMELINE" />
+        </div>
+
+        <Timeline />
       </div>
     </div>
   );
-}
-
-const BodyContent = ({
-  isToggled,
-  project_slug
-}: {
-  isToggled: boolean
-  project_slug: string | undefined
-}) => {
-  const router = useRouter()
-  const [project, setProject] = useState('')
-  const [isLoading, setIsLoading] = useState(true)
-
-  useEffect(() => {
-    project_slug ? setProject(project_slug) : setProject('')
-    setIsLoading(false)
-  }, [router, project_slug, project, isLoading])
-
-  if (isLoading) {
-    // todo: skeleton of page
-    return <div>Loading...</div>
-  }
-
-  return (
-    <div>
-      {project == ''
-        ? <LandingLayout
-            isToggled={isToggled}
-          />
-        : <ProjectLayout
-            isToggled={isToggled}
-            project_key={project}
-          />
-      }
-    </div>
-  )
 }
