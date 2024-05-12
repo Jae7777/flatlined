@@ -45,9 +45,11 @@ const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({
                   <p className="text-sm font-semibold whitespace-nowrap max-w-full">
                     {project.name}
                   </p>
-                  <p className="text-xs pt-1 pb-2 overflow-y-scroll max-w-full">
-                    {project.description}
-                  </p>
+                  <div className="overflow-y-scroll h-12 mt-2">
+                    <p className="text-xs">
+                      {project.description}
+                    </p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
