@@ -50,8 +50,8 @@ const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({
     >
       <CarouselContent className="">
         {projects.map((project, index) => (
-          <Dialog>
-            <CarouselItem key={index} className="sm:basis-1/2 lg:basis-1/3 2xl:basis-1/4 hover:opacity-80 duration-200">                
+          <Dialog key={index}>
+            <CarouselItem className="sm:basis-1/2 lg:basis-1/3 2xl:basis-1/4 hover:opacity-80 duration-200">                
               <DialogTrigger>
                 <Card className="aspect-square rounded-2xl bg-background border border-null-1">
                   <CardContent className="p-0 w-full h-full relative">
