@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import { Card, CardContent, CardFooter, CardTitle } from "../ui/card";
+import { Card, CardContent} from "../ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import { useRouter } from "next/navigation";
 import {
@@ -13,18 +13,10 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { Button } from "../ui/button";
-import { FaGithub } from "react-icons/fa6";
-import Logo from "./Logo";
-import logoURLs from "../../lib/logos.json";
 import LogoGrid from "./LogoGrid";
 import Subtitle from "./Subtitle";
 import Link from "next/link";
 import { Link2Icon } from "lucide-react";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card"
 
 
 
