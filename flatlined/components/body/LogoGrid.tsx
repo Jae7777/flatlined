@@ -1,18 +1,23 @@
 import Logo from "./Logo"
-
+import LogoURLs from '../../lib/logos.json'
 
 interface LogoGridProps {
-  logos: {path: string, name: string}[]
+  names: string[]
 }
 
 const LogoGrid: React.FC<LogoGridProps> = ({
-  logos
+  names
 }) => {
+  const logos: {name: string, path: string}[] = names.map((name) => {
+    return {
+      name: name,
+      path: LogoURLs[name as keyof typeof LogoURLs]
+    }
+  })
   return (
     <div style={{boxShadow: "0 0 40px #24242E"}} 
       className={` 
-      grid dark-dot-pattern mt-2 py-4 px-2 rounded-sm
-      grid-cols-4 xs:grid-cols-5 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-9 xl:grid-cols-11 2xl:grid-cols-13
+      grid dark-dot-pattern py-4 px-2 gap-y-3 rounded-sm grid-cols-4 xs:grid-cols-5
     `}>
         {logos.map((logo) => {
           return (

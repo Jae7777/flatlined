@@ -3,8 +3,6 @@ import { Fira_Code } from "next/font/google";
 import Image from "next/image";
 import { BiDownload, BiMailSend } from "react-icons/bi";
 import Subtitle from "@/components/body/Subtitle";
-import LogoGrid from "@/components/body/LogoGrid";
-import logos from "../app/data/logos.json";
 import Timeline from "@/components/timeline/Timeline";
 import getProjects from "@/actions/getProjects";
 
@@ -19,10 +17,6 @@ export const dynamic = "force-dynamic";
 
 export default async function Home() {
   const projects = await getProjects({});
-
-  const logoObjects = Object.entries(logos).map((obj) => {
-    return { name: obj[0], path: obj[1] };
-  });
 
   return (
     <div className="h-full">
@@ -90,8 +84,6 @@ export default async function Home() {
         <div className="pt-6">
           <Subtitle content="SKILLS" />
         </div>
-
-        <LogoGrid logos={logoObjects} />
 
         <div className="pt-6">
           <Subtitle content="TIMELINE" />
