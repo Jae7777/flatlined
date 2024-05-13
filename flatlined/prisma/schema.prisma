@@ -12,6 +12,7 @@ model Project {
     name      String
     url       String
     caniframe Boolean
+    preview   String
     role      String
     startDate String
     status    String
