@@ -1,12 +1,12 @@
 
 import { Fira_Code } from "next/font/google";
 import Image from "next/image";
-import { BiDownload, BiMailSend } from "react-icons/bi";
 import Subtitle from "@/components/body/Subtitle";
 import Timeline from "@/components/timeline/Timeline";
 import getProjects from "@/actions/getProjects";
-
+import { RiRobot2Line } from "react-icons/ri";
 import ProjectsCarousel from "@/components/body/ProjectsCarousel";
+import RoboProfile from "@/components/RoboProfile";
 
 const fira_code = Fira_Code({
   subsets: ["latin"],
@@ -64,27 +64,21 @@ export default async function Home() {
           </div>
         </div>
 
-        <div className="flex-col text-center pt-6 pb-12 space-y-4">
+        <br/><br/>
+        <div className="flex justify-center items-center gap-3 ">
+          <RiRobot2Line size="25"/>
           <span className="text-cyber-1 text-xl">Latest Creations</span>
-          <ProjectsCarousel projects={projects} />
-        </div>
-
-        <div className="flex max-w-[400px] flex-wrap gap-6 py-3">
-          <a href="/docs/Resume.pdf" download className="button-1">
-            {`Resumé`}
-            <BiDownload />
-          </a>
-
-          <a href="mailto:jchen4086@gmail.com" className="button-2">
-            {`Contact`}
-            <BiMailSend />
-          </a>
-        </div>
-
-        <div className="pt-6">
-          <Subtitle content="SKILLS" />
-        </div>
-
+        </div><br/>
+        <ProjectsCarousel projects={projects} />
+        
+        <br/><br/><br/><br/>
+        <div className="flex justify-center items-center gap-3 pb-3">
+          <RiRobot2Line size="25"/>
+          <span className="text-cyber-1 text-xl">Our Robo Workers</span>
+        </div><br/>
+        <RoboProfile />
+        
+        <br/><br/>
         <div className="pt-6">
           <Subtitle content="TIMELINE" />
         </div>
