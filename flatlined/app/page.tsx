@@ -42,12 +42,15 @@ export default async function Home() {
             className="relative h-full w-full"
             style={{ boxShadow: "0 0 10px #101215" }}
           >
-            <div className="opacity-40">
+            <div className="">
               <Image
                 src="/hero.jpg"
                 alt="hero"
                 fill
-                style={{ objectFit: "cover" }}
+                style={{
+                  objectFit: "cover", 
+                  WebkitMaskImage: "radial-gradient(circle, rgba(0,0,0,0.4) 0%, rgba(0,0,0,1) 100%)"
+                }}
                 sizes="100vw"
                 priority={true}
               />
