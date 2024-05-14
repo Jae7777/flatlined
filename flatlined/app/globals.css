@@ -39,36 +39,6 @@ body,
     @apply w-[20px];
     @apply h-[20px];
   }
-  .button-1 {
-    @apply flex;
-    @apply flex-1;
-    @apply border-[1px];
-    @apply border-cyber-1;
-    @apply hover:[border-color:rgb(255_237_165)];
-    @apply text-cyber-1;
-    @apply hover:[color:rgb(255_237_165)];
-    @apply cursor-pointer;
-    @apply px-4;
-    @apply py-2;
-    @apply items-center;
-    @apply justify-center;
-    @apply gap-2;
-    @apply duration-300;
-  }
-  .button-2 {
-    @apply flex;
-    @apply flex-1;
-    @apply bg-cyber-4;
-    @apply hover:[background-color:rgb(225_122_96)];
-    @apply rounded-sm;
-    @apply cursor-pointer;
-    @apply px-4;
-    @apply py-2;
-    @apply items-center;
-    @apply justify-center;
-    @apply gap-2;
-    @apply duration-300;
-  }
   .responsive-text-xxs {
     font-size: 70%;
   }

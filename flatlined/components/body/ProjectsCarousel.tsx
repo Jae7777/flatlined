@@ -43,7 +43,7 @@ const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({
   return (
     <Carousel
       opts={{
-
+        align: "start",
         loop: true,
       }}
       className="pb-5 w-full"
@@ -53,7 +53,7 @@ const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({
           <Dialog key={index}>
             <CarouselItem className="sm:basis-1/2 lg:basis-1/3 2xl:basis-1/4 hover:opacity-80 duration-200">                
               <DialogTrigger>
-                <Card className="aspect-square rounded-2xl bg-background border border-null-1">
+                <Card className="aspect-square max-w-[350px] rounded-2xl bg-background border border-null-1">
                   <CardContent className="p-0 w-full h-full relative">
                     <Image 
                       src={project.preview == "" ? "/showcases/flatlined.svg" : project.preview}
@@ -66,7 +66,7 @@ const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({
                       <p className="text-sm font-semibold whitespace-nowrap max-w-full">
                         {project.name}
                       </p>
-                      <div className="overflow-y-scroll h-12 mt-2">
+                      <div className="overflow-y-scroll h-[60%] mt-2">
                         <p className="text-xs">
                           {project.description}
                         </p>
@@ -79,12 +79,12 @@ const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({
               <DialogContent>
                 <DialogHeader>
                   <DialogTitle>{project.name}</DialogTitle>
-                  <DialogDescription>
+                  <DialogDescription className="text-slate-400">
                     {project.description}
                   </DialogDescription>
                 </DialogHeader>
 
-                <Subtitle content="Skills" />
+                <Subtitle content="SKILLS" />
                 <LogoGrid
                   names={project.skillset}
                 />

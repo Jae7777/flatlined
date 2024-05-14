@@ -7,10 +7,11 @@ const Subtitle: React.FC<SubtitleProps> = ({
   content,
 }) => {
   return (
-    <div className={`
+    <div 
+      style={{ fontFamily: 'ibm-plex-mono, monospace'}}
+    className={`
       flex items-center 
-      gap-2 responsive-text-lg w-[30%] text-cyber-1
-      tracking-wide
+      gap-2 text-md w-[30%] text-cyber-1
     `}>
       <hr style={{
         color: 'white',

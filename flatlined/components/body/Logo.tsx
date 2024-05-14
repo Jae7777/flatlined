@@ -10,23 +10,25 @@ import {
 interface LogoProps {
   imgSrc: string,
   name: string 
+  backdrop?: boolean
 }
 
 const Logo: React.FC<LogoProps> = ({
   imgSrc,
   name,
+  backdrop=false
 }) => {
   return (
     <> 
       <div className='mx-auto my-2'>
-        <TooltipProvider delayDuration={100}>
+        <TooltipProvider delayDuration={50}>
           <Tooltip>
             <TooltipTrigger asChild>
               <div className='mx-auto relative h-[40px] w-[40px] hover:cursor-pointer'>
-                <div className='
-                  light-backdrop-sm
+                <div className={`
+                  ${backdrop && 'light-backdrop-sm'}
                   mx-auto relative top-[10px]
-                '>
+                `}>
                 </div>
                 <Image
                   src={imgSrc}

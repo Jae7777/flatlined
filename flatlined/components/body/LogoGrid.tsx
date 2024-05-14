@@ -25,6 +25,7 @@ const LogoGrid: React.FC<LogoGridProps> = ({
               key={logo.name}
               imgSrc={logo.path}
               name={logo.name}
+              backdrop
             />
           )
         })}
