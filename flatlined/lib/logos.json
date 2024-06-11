@@ -1,4 +1,10 @@
 {
+  "Expo": "/logos/Expo.svg",
+  "Firebase": "/logos/Firebase.svg",
+  "React Native": "/logos/ReactNative.svg",
+  "PostgreSQL": "/logos/PostgreSQL.svg",
+  "Stripe": "/logos/Stripe.svg",
+  "NextAuth": "/logos/NextAuth.png",
   "Azure": "/logos/azure.svg",
   "CSS Bootstrap": "/logos/bootstrap.svg",
   "Next.js": "/logos/nextjs.svg",
