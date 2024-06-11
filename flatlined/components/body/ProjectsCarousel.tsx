@@ -52,17 +52,19 @@ const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({
         {projects.map((project, index) => (
           <Dialog key={index}>
             <CarouselItem className="sm:basis-1/2 lg:basis-1/3 2xl:basis-1/4 hover:opacity-80 duration-200">                
-              <DialogTrigger>
-                <Card className="aspect-square max-w-[350px] rounded-2xl bg-background border border-null-1">
+              <DialogTrigger className="w-full h-full aspect-square rounded-2xl">
+                <Card className="w-full h-full bg-background border border-null-1">
                   <CardContent className="p-0 w-full h-full relative">
-                    <Image 
-                      src={project.preview == "" ? "/showcases/flatlined.svg" : project.preview}
-                      alt=""
-                      fill
-                      className=" rounded-2xl object-top object-cover"
-                      sizes="100vw, (min-width: 640px) 50vw, (min-width: 1024px) 33vw"
-                    />
-                    <div className="relative h-[40%] top-[60%] rounded-2xl bg-alabaster pt-5 text-left px-6 border border-background">
+                    <div className="absolute left-0 top-0 w-full h-full">
+                      <Image 
+                        src={project.preview == "" ? "/showcases/flatlined.svg" : project.preview}
+                        alt=""
+                        fill
+                        className=" rounded-2xl object-top object-cover"
+                        sizes="100vw, (min-width: 640px) 50vw, (min-width: 1024px) 33vw"
+                      />
+                    </div>
+                    <div className="h-[40%] max-h-[140px] bottom-0 rounded-2xl bg-alabaster pt-5 text-left px-6 border border-background absolute w-full">
                       <p className="text-sm font-semibold whitespace-nowrap max-w-full">
                         {project.name}
                       </p>
