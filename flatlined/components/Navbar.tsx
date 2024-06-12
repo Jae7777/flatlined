@@ -40,7 +40,7 @@ const Navbar = () => {
         <div className='absolute right-8'>
           <div className='flex flex-row gap-3'>
             <EmailIcon email={email} />
-            <a href='https://www.linkedin.com/in/justin-chen-b27bb324b/' target='_blank' rel='noopener noreferrer'>
+            <a href='https://www.linkedin.com/in/justin-flatlined/' target='_blank' rel='noopener noreferrer'>
               <FaLinkedinIn
                 className='navbar-item clickable-dark'
                 color='#feb080'
