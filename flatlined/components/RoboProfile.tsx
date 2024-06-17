@@ -22,7 +22,7 @@ const RoboProfile = () => {
         </CardContent>
       </Card>
 
-      <Card className="max-w-[500px] h-fit bg-cyberfellow border border-alabaster">
+      <Card className="max-w-[500px] h-fit bg-background border border-alabaster">
         <CardHeader>
           <h1 className="text-lg text-cyber-1">
             Robot #1

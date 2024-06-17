@@ -27,12 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} bg-background text-white`}>
-        <div className=''>
-          <Navbar/>
-          {children}
-          <Toaster />
-          <Analytics />
-        </div>
+        <Navbar/>
+        {children}
+        <Toaster />
+        <Analytics />
       </body>
     </html>
   );

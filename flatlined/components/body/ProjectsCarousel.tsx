@@ -44,7 +44,7 @@ const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({
     <Carousel
       opts={{
         align: "start",
-        loop: true,
+        loop: false,
       }}
       className="pb-5 w-full"
     >

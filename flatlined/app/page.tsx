@@ -7,6 +7,7 @@ import getProjects from "@/actions/getProjects";
 import { RiRobot2Line } from "react-icons/ri";
 import ProjectsCarousel from "@/components/body/ProjectsCarousel";
 import RoboProfile from "@/components/RoboProfile";
+import CogsBackground from "@/components/CogsBackground";
 
 const fira_code = Fira_Code({
   subsets: ["latin"],
@@ -20,6 +21,7 @@ export default async function Home() {
 
   return (
     <div className="h-full">
+      <CogsBackground/>
       <div
         className={`
           block
@@ -47,11 +49,8 @@ export default async function Home() {
                 src="/hero.jpg"
                 alt="hero"
                 fill
-                style={{
-                  objectFit: "cover", 
-                  WebkitMaskImage: "radial-gradient(circle, rgba(0,0,0,0.4) 0%, rgba(0,0,0,1) 100%)"
-                }}
                 sizes="100vw"
+                className="brightness-[90%] object-cover"
                 priority={true}
               />
             </div>
