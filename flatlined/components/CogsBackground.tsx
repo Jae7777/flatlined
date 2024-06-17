@@ -10,16 +10,16 @@ const CogsBackground = () => {
           alt="Spinning Cogwheel Animation"
           width="400"
           height="400"
-          style={{ animation: "spin 60s linear infinite"}}
-          className="absolute"
+          className="absolute spin"
+          priority
         />
         <Image
           src='/cogwheel2.png'
           alt="Spinning Cogwheel Animation"
           width="230"
           height="230"
-          style={{ animation: "spin 80s linear infinite reverse"}}
-          className="absolute"
+          className="absolute spin-reverse"
+          priority
         />
       </div>
       <div className="fixed z-[-50] brightness-75 size-[300px] right-[-150px] top-[-80px]">
@@ -28,8 +28,8 @@ const CogsBackground = () => {
           alt="Spinning Cogwheel Animation"
           width="400"
           height="400"
-          style={{ animation: "spin 60s linear infinite"}}
-          className="absolute"
+          className="absolute spin"
+          priority
         />
       </div>
     </>
