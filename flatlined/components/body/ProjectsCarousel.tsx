@@ -25,14 +25,11 @@ interface ProjectsCarouselProps {
     id: string;
     name: string;
     url: string;
-    caniframe: boolean;
     role: string;
     preview: string;
     startDate: string;
-    status: string;
     skillset: string[];
     description: string;
-    collaborators: string[];
     createdAt: Date;
   }[]
 }
