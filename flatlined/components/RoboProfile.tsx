@@ -55,7 +55,7 @@ const RoboProfile = () => {
               <Tooltip>
                 <TooltipTrigger>
                   <Button asChild size="icon" className=" bg-cyber-3 hover:bg-cyber-2">
-                    <a href="mailto:jchen4086@gmail.com">
+                    <a href="mailto:justin.flatlined@gmail.com">
                       <BiMailSend className="w-5 h-5"/>
                     </a>
                   </Button>
@@ -81,7 +81,7 @@ const RoboProfile = () => {
               <Tooltip>
                 <TooltipTrigger>
                   <Button asChild size="icon" className=" bg-[#2b6cd0] hover:bg-[#2b78d0]">
-                    <a href="https://www.linkedin.com/in/justin-chen-b27bb324b/" target="_blank">
+                    <a href="https://www.linkedin.com/in/justin-flatlined/" target="_blank">
                       <LinkedinIcon className="w-5 h-5"/>
                     </a>
                   </Button>
