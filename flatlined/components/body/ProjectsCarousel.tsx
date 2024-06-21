@@ -52,15 +52,13 @@ const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({
               <DialogTrigger className="w-full h-full aspect-square rounded-2xl">
                 <Card className="w-full h-full bg-background border border-null-1">
                   <CardContent className="p-0 w-full h-full relative">
-                    <div className="absolute left-0 top-0 w-full h-full">
-                      <Image 
-                        src={project.preview == "" ? "/showcases/flatlined.svg" : project.preview}
-                        alt=""
-                        fill
-                        className=" rounded-2xl object-top object-cover"
-                        sizes="100vw, (min-width: 640px) 50vw, (min-width: 1024px) 33vw"
-                      />
-                    </div>
+                    <Image 
+                      src={project.preview == "" ? "/showcases/flatlined.svg" : project.preview}
+                      alt=""
+                      width={0} height={0}
+                      className=" rounded-2xl object-cover w-full h-full"
+                      sizes="100vw"
+                    />
                     <div className="h-[40%] max-h-[140px] bottom-0 rounded-2xl bg-alabaster pt-5 text-left px-6 border border-background absolute w-full">
                       <p className="text-sm font-semibold whitespace-nowrap max-w-full">
                         {project.name}

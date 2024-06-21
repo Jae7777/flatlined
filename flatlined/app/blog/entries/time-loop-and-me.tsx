@@ -17,14 +17,16 @@ const Blog4 = () => {
         <br/><br/>
         {`Fast-forward to modern times, and this food scarcity no longer exists. But our brain is still wired to replay this loop; this gamification of activities. And once you become aware of this behavioral vulnerability you realize that every fucking industry in this world is trying to get you hooked and addicted, and has been successfully doing so for generations.`}
         <br/><br/>
-        <div className="relative w-full h-[400px]">
-          <Image 
-            src="/blog/gambling_addict.webp"
-            alt="Person playing the slot machine"
-            fill
-            className="object-cover"
-          />
-        </div>
+        <Image 
+          src="/blog/gambling_addict.webp"
+          alt="Person playing the slot machine"
+          sizes="100vw"
+          width={0}
+          height={0}
+          style={{ width: '100%', height: 'auto' }}
+          className="object-cover"
+        />
+
         <br/><br/>
         {`Ever wonder why casino's make so much money? Every person with a brain understands that the house always wins. Yet Las Vegas still remains a gambling supercenter with millions of regular visitors to its casinos. If slot machine addicts know that they're going to lose money, why do they keep spinning the wheel? There's clearly no joy in it either; I mean, just look at their faces. It all ties back to the scarcity loop that our brain is engineered to fall addicted to. Research from a casino lab have shown that replacing the lever with a button increased slot machine playtime multifold. They optimized replayability by minimized effort (pulling a lever took more manual labor than tapping a button), and slot machine revenues soar.`}
         <br/><br/>
@@ -32,14 +34,14 @@ const Blog4 = () => {
         <br/><br/>
         {`This isn't to say that our inclination towards the scarcity loop is a bad behavior. Gamification of exercising, money saving, and dieting can help enforce good habits. But too often companies take advantage of our lack of resistance without care for the adverse consequences of our health.`}
         <br/><br/>
-        <div className="relative w-full h-[400px]">
-          <Image 
-            src="/blog/screen_time.webp"
-            alt="Graph of Average Screen Time over years"
-            fill
-            className="object-fill"
-          />
-        </div>
+        <Image 
+          src="/blog/screen_time.webp"
+          alt="Graph of Average Screen Time over years"
+          width={0} height={0}
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+          className="object-fill"
+        />
         <br/><br/>
         {`Many people have stated that they felt the years pass by during and after COVID in the blink of an eye. One thing we saw with the pandemic is a massive increase in digital engagement and screen time, and that rise has not seen a drop after the pandemic. I believe that those two observations are related. Too often have I spent hours browsing YouTube without realizing it. I think in addition to our attention span and ability to think, we have given up something much more valuable to big corporations. And it is our limited time on this Earth. It digests me.`}
         <br/><br/>
