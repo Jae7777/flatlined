@@ -6,6 +6,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "@/components/ui/toaster";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({
         <Toaster />
         <Analytics />
       </body>
+      <GoogleAnalytics gaId='G-LN3G8VX180' />
     </html>
   );
 }
