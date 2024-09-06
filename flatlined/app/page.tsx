@@ -3,7 +3,6 @@ import { Fira_Code } from "next/font/google";
 import Image from "next/image";
 import Subtitle from "@/components/body/Subtitle";
 import Timeline from "@/components/timeline/Timeline";
-import getProjects from "@/actions/getProjects";
 import { RiRobot2Line } from "react-icons/ri";
 import ProjectsCarousel from "@/components/body/ProjectsCarousel";
 import RoboProfile from "@/components/RoboProfile";
@@ -17,7 +16,6 @@ const fira_code = Fira_Code({
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  const projects = await getProjects({});
 
   return (
     <div className="h-full">
@@ -71,7 +69,6 @@ export default async function Home() {
           <RiRobot2Line size="25"/>
           <span className="text-cyber-1 text-xl">Latest Creations</span>
         </div><br/>
-        <ProjectsCarousel projects={projects} />
         
         <br/><br/><br/><br/>
         <div className="flex justify-center items-center gap-3 pb-3">
