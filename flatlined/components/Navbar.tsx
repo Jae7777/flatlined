@@ -5,9 +5,10 @@ import { FaGithub, FaHouse, FaLinkedinIn } from "react-icons/fa6"
 import EmailIcon from "./EmailIcon"
 import { IoIosJournal } from "react-icons/io"
 
+const email = 'justin.flatlined@gmail.com'
+
 const Navbar = () => {
   const router = useRouter()
-  const email = 'jchen4086@gmail.com'
 
   return (
     <div className='fixed w-full z-50 h-[55px] text-center bg-background'>
