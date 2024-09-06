@@ -1,5 +1,5 @@
 import Logo from "./Logo"
-import LogoURLs from '../../lib/logos.json'
+import LogoURLs from '@/lib/logos.json'
 
 interface LogoGridProps {
   names: string[]
