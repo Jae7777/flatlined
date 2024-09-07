@@ -44,30 +44,20 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       colors: {
-        'null-1':          '#28262E',
-        'background':             '#171922',
-        'null-3':             '#252531',
-        'null-sidebar-head':  '#24242E',
-        'null-sidebar-body':  '#20202A',
-        'offwhite':       '#f5f5f5',
-        'alabaster':      '#F0F5F1',
-        'cyberyellow':    '#f7d967',
-        'cybercyan':      '#3db3d0',
-        'cyberred':       '#c24347',
-        'cyberviolet':    '#aa5a9c',
-        'cyberblue':      '#1e588d',
-        'cyberdarkblue':  '#191338',
-        'cyber-1':        '#f8d991',
-        'cyber-2':        '#f6b080',
-        'cyber-3':        '#f58b60',
-        'cyber-4':        '#e1664c',
-        'cyber-5':        '#774c3e',
-        'cyber-6':        '#091d23',
-        'cyber-7':        '#8E4330',
+        "fln-black": "#212531",
+        "fln-white": "#E3E5ED",
+        "fln-yellow": "##f7d967",
+        "fln-lilac": "#da8ae5",
+        "fln-gray": "#bfbfbf",
+        "fln-orange": "#f6b080",
+        "fln-blue": "#429dd7"
       }
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"), 
+    require('@tailwindcss/typography')
+  ],
 } satisfies Config
 
 export default config
