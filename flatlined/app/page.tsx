@@ -7,6 +7,7 @@ import { RiRobot2Line } from "react-icons/ri";
 import ProjectsCarousel from "@/components/body/ProjectsCarousel";
 import RoboProfile from "@/components/RoboProfile";
 import CogsBackground from "@/components/CogsBackground";
+import getProjects from "@/actions/getProjects";
 
 const fira_code = Fira_Code({
   subsets: ["latin"],
@@ -16,52 +17,28 @@ const fira_code = Fira_Code({
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
-
+  const projects = await getProjects();
+  console.log(projects);
   return (
     <div className="h-full">
       <CogsBackground/>
-      <div
-        className={`
-          block
-          pt-[65px]
-          pb-[20px]
-          text-white
-          duration-300
-          px-[40px]
-          md:px-[80px]
-          xl:px-[160px]
-          ${fira_code.className}
-        `}
-      >
-        <div
-          className={`
-          responsive-screen-md
-        `}
-        >
+      <div className={`block pt-[65px] pb-[20px] text-white duration-300 px-[40px] md:px-[80px] xl:px-[160px] ${fira_code.className}`}>
+        <div className='responsive-screen-md relative'>
+          <Image
+            src="/hero.jpg"
+            alt="hero"
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="absolute brightness-[90%] w-full h-full object-cover shadow-xl"
+            priority={true}
+          />
           <div
-            className="relative h-full w-full"
-            style={{ boxShadow: "0 0 10px #101215" }}
+            style={{ textShadow: "2px 2px 5px" }}
+            className='absolute text responsive-text-md top-1/2 text-center text-white right-1/2 translate-x-1/2'
           >
-            <div className="">
-              <Image
-                src="/hero.jpg"
-                alt="hero"
-                fill
-                sizes="100vw"
-                className="brightness-[90%] object-cover"
-                priority={true}
-              />
-            </div>
-            <div
-              style={{ textShadow: "2px 2px 5px" }}
-              className={`
-                text responsive-text-md relative top-1/2 text-center
-                text-white
-            `}
-            >
-              {`Your human code machine.`}
-            </div>
-          </div>
+            A visionary coding studio.
+        </div>
         </div>
 
         <br/><br/>
