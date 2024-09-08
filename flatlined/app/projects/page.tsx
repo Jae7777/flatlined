@@ -8,8 +8,7 @@ import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Image from "next/image";
 import Link from "next/link";
 import ScreenShimmer from "@/components/ScreenShimmer";
-import { IconCircle, IconCircleFilled } from "@tabler/icons-react";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { IconCircleFilled } from "@tabler/icons-react";
 import ReactMarkdown from 'react-markdown';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
@@ -77,25 +76,32 @@ const ProjectsPage = () => {
                 </CardItem>
 
                 {/* Previews */}
-                <CardItem
-                  translateZ="100"
-                  translateX="30"
-                >
-                  {
-                    project.fields.previews && project.fields.previews.map((preview: any, index: number) => {
-                      return (
-                        <Image
-                          key={index}
-                          src={'https:' + preview.fields.file.url}
-                          alt={preview.fields.title + ',' + preview.fields.description}
-                          width={300}
-                          height={300}
-                          className="rounded-xl w-full h-fit "
-                        />
-                      )
-                    })
-                  }
-                </CardItem>
+                { project.fields.previews && 
+                  <CardItem className="pb-4 mx-auto">
+                    <Carousel>
+                      <CarouselContent className="">
+                        {
+                          project.fields.previews.map((preview: any, index: number) => {
+                            return (
+                              <CarouselItem key={index} className="">
+                                <Image
+                                  src={'https:' + preview.fields.file.url}
+                                  alt={preview.fields.title + ',' + preview.fields.description}
+                                  width={0}
+                                  height={0}
+                                  className="rounded-xl w-full h-fit object-contain"
+                                  sizes="80vw, (min-width: 1024px) 50vw"
+                                  />
+                              </CarouselItem>
+                            )
+                          })
+                        }
+                      </CarouselContent>
+                      <CarouselPrevious/>
+                      <CarouselNext />
+                    </Carousel>
+                  </CardItem>
+                }
 
                 {/* Links */}
                 <CardItem
