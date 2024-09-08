@@ -1,13 +1,10 @@
-
+'use client';
 import { Fira_Code } from "next/font/google";
-import Image from "next/image";
-import Subtitle from "@/components/body/Subtitle";
-import Timeline from "@/components/timeline/Timeline";
-import { RiRobot2Line } from "react-icons/ri";
-import ProjectsCarousel from "@/components/body/ProjectsCarousel";
-import RoboProfile from "@/components/RoboProfile";
-import CogsBackground from "@/components/CogsBackground";
 import getProjects from "@/actions/getProjects";
+import { LampContainer } from "@/components/ui/lamp";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { Entry, EntrySkeletonType } from "contentful";
 
 const fira_code = Fira_Code({
   subsets: ["latin"],
@@ -16,51 +13,46 @@ const fira_code = Fira_Code({
 
 export const dynamic = "force-dynamic";
 
-export default async function Home() {
-  const projects = await getProjects();
-  console.log(projects);
+export default function Home() {
+  const [projects, setProjects] = useState<Entry<EntrySkeletonType, undefined, string>[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchProjects() {
+      try {
+        const data = await getProjects();
+        setProjects(data);
+        console.log(data);
+      } catch (error) {
+        console.error('Failed to fetch projects:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    fetchProjects();
+  }, []);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
   return (
-    <div className="h-full">
-      <CogsBackground/>
-      <div className={`block pt-[65px] pb-[20px] text-white duration-300 px-[40px] md:px-[80px] xl:px-[160px] ${fira_code.className}`}>
-        <div className='responsive-screen-md relative'>
-          <Image
-            src="/hero.jpg"
-            alt="hero"
-            width="0"
-            height="0"
-            sizes="100vw"
-            className="absolute brightness-[90%] w-full h-full object-cover shadow-xl"
-            priority={true}
-          />
-          <div
-            style={{ textShadow: "2px 2px 5px" }}
-            className='absolute text responsive-text-md top-1/2 text-center text-white right-1/2 translate-x-1/2'
-          >
-            A visionary coding studio.
-        </div>
-        </div>
-
-        <br/><br/>
-        <div className="flex justify-center items-center gap-3 ">
-          <RiRobot2Line size="25"/>
-          <span className="text-cyber-1 text-xl">Latest Creations</span>
-        </div><br/>
-        
-        <br/><br/><br/><br/>
-        <div className="flex justify-center items-center gap-3 pb-3">
-          <RiRobot2Line size="25"/>
-          <span className="text-cyber-1 text-xl">Our Robo Workers</span>
-        </div><br/>
-        <RoboProfile />
-        
-        <br/><br/>
-        <div className="pt-6">
-          <Subtitle content="TIMELINE" />
-        </div>
-
-        <Timeline />
-      </div>
+    <div className={`${fira_code.className}`}>
+      <LampContainer>
+        <motion.h1
+          initial={{ opacity: 0.5, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+        >
+          The visionary coding studio.
+        </motion.h1>
+      </LampContainer>
     </div>
   );
 }
