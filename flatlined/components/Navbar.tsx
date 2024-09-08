@@ -48,10 +48,10 @@ const Navbar = () => {
           return (
             <Tooltip key={index}>
               <TooltipTrigger className="relative">
-                <Link href={item.href} className="flex flex-col items-center justify-center" >
+                <Link href={item.href} className="flex flex-col items-center justify-center gap-1" >
                   <item.icon
                     strokeWidth={2}
-                    className={`py-1 text-fln-white size-10`}
+                    className={` text-fln-white size-8`}
                   />
                   {isActive && 
                     <div className='w-7 h-[0.3rem] rounded-full bg-fln-blue' />

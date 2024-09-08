@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ubuntu.className} bg-fln-black max-w-full`}>
+      <body className={`${ubuntu.className} bg-slate-950 max-w-full`}>
         <Navbar/>
         {children}
         <Toaster />
