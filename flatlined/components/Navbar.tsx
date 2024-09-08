@@ -1,62 +1,72 @@
 'use client'
 
-import { redirect, useRouter } from "next/navigation"
-import { FaGithub, FaHouse, FaLinkedinIn } from "react-icons/fa6"
-import EmailIcon from "./EmailIcon"
-import { IoIosJournal } from "react-icons/io"
+import { IconBrandVscode, IconHome, IconMessage, IconNotebook, IconUsersGroup } from '@tabler/icons-react';
+import Link from "next/link";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
+import { usePathname } from "next/navigation";
 
 const email = 'justin.flatlined@gmail.com'
 
+const navItems = [
+  {
+    title: 'Q&A',
+    icon: IconMessage,
+    href: '/q&a'
+  },
+  {
+    title: 'Members',
+    icon: IconUsersGroup,
+    href: '/members'
+  },
+  {
+    title: 'Home',
+    icon: IconHome,
+    href: '/'
+  },
+  {
+    title: 'Projects',
+    icon: IconBrandVscode,
+    href: '/projects'
+  },
+  {
+    title: 'Blog & Posts',
+    icon: IconNotebook,
+    href: '/blog'
+  }
+]
+
 const Navbar = () => {
-  const router = useRouter()
+  const pathname = usePathname()
 
   return (
-    <div className='fixed w-full z-50 h-[55px] text-center bg-background'>
-      <div className='
-        h-full mx-auto flex
-        items-center justify-center
-      '>
-        <div onClick={() => {router.push('/')}} className='
-          clickable-dark
-        '>
-          <FaHouse 
-            className='navbar-item'
-            color='#feb080'
-          />
-        </div>
-
-        <div className="absolute left-8 text-[#feb080] text-sm">
-          <div 
-            className="flex gap-1 items-center clickable-dark"
-            onClick={() => router.push('/blog')}
-          >
-            <IoIosJournal
-              className="navbar-item"
-              color='#feb080'
-            />
-            Blog
-          </div>
-        </div>
-
-        <div className='absolute right-8'>
-          <div className='flex flex-row gap-3'>
-            <EmailIcon email={email} />
-            <a href='https://www.linkedin.com/in/justin-flatlined/' target='_blank' rel='noopener noreferrer'>
-              <FaLinkedinIn
-                className='navbar-item clickable-dark'
-                color='#feb080'
-              />
-            </a>
-            <a href='https://github.com/Jae7777' target='_blank' rel='noopener noreferrer'>
-              <FaGithub
-                className='navbar-item clickable-dark'
-                color='#feb080'
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <nav
+      className="bottom-0 md:bottom-10 inset-x-0 max-w-2xl mx-auto z-50 fixed w-full flex items-center justify-center bg-fln-black rounded-full text-fln-white py-4 gap-14"
+    >
+      <TooltipProvider delayDuration={100}>
+        {navItems.map((item, index) => {
+          const isActive = pathname === item.href
+          return (
+            <Tooltip key={index}>
+              <TooltipTrigger className="relative">
+                <Link href={item.href} className="flex flex-col items-center justify-center" >
+                  <item.icon
+                    strokeWidth={2}
+                    className={`py-1 text-fln-white size-10`}
+                  />
+                  {isActive && 
+                    <div className='w-7 h-[0.3rem] rounded-full bg-fln-blue' />
+                  }
+                  
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent sideOffset={8} side="top">
+                {item.title}
+              </TooltipContent>
+            </Tooltip>
+          ) 
+      })}
+      </TooltipProvider>
+    </nav>
   )
 }
 
