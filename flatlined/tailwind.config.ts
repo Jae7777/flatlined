@@ -38,15 +38,21 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        shimmer: {
+          '100%': {
+            transform: 'translateX(100%)',
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        
       },
       colors: {
         "fln-black": "#212531",
         "fln-white": "#E3E5ED",
-        "fln-yellow": "##f7d967",
+        "fln-yellow": "#f7d967",
         "fln-lilac": "#da8ae5",
         "fln-gray": "#bfbfbf",
         "fln-orange": "#f6b080",
