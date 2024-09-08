@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${ubuntu.className} bg-slate-950 max-w-full text-fln-white`}>
         <Navbar/>
-        {children}
+        <div className="pb-24">{children}</div>
         <Toaster />
         <Analytics />
       </body>

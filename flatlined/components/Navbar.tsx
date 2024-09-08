@@ -40,7 +40,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="bottom-0 md:bottom-10 inset-x-0 max-w-2xl mx-auto z-50 fixed w-full flex items-center justify-center bg-fln-black rounded-full text-fln-white py-4 gap-14"
+      className="bottom-0 md:bottom-10 inset-x-0 max-w-2xl mx-auto z-50 fixed w-full flex items-center justify-center bg-fln-black rounded-full text-fln-white py-4 gap-14 border-2 border-slate-950 shadow-xl"
     >
       <TooltipProvider delayDuration={100}>
         {navItems.map((item, index) => {
