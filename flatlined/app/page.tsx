@@ -1,38 +1,11 @@
 'use client';
-import getProjects from "@/actions/getProjects";
 import { LampContainer } from "@/components/ui/lamp";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
-import { Entry, EntrySkeletonType } from "contentful";
-
 import { fira_code } from "./fonts";
 
 export const dynamic = "force-dynamic";
 
 export default function Home() {
-  const [projects, setProjects] = useState<Entry<EntrySkeletonType, undefined, string>[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    async function fetchProjects() {
-      try {
-        const data = await getProjects();
-        setProjects(data);
-        console.log(data);
-      } catch (error) {
-        console.error('Failed to fetch projects:', error);
-      } finally {
-        setIsLoading(false);
-      }
-    }
-
-    fetchProjects();
-  }, []);
-
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
-
   return (
     <div className={`${fira_code.className}`}>
       <LampContainer>
