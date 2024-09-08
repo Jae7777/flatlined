@@ -1,7 +1,7 @@
-import client from "@/app/lib/contentful";
+import contentful from '@/app/lib/contentful';
 
 const getProjects = async() => {
-  const response = await client.getEntries({
+  const response = await contentful.getEntries({
     content_type: 'project',
   });
   
