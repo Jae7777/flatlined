@@ -5,10 +5,10 @@ import dynamic from "next/dynamic";
 import { IoIosArrowBack } from "react-icons/io";
 import { useRouter } from "next/navigation";
 
-const BlogEntry = ({ params }: { params: { name: string } }) => {
-  const name = params.name;
+const BlogEntry = ({ params }: { params: { slug: string } }) => {
+  const slug = params.slug;
   // dynamically import the blog entry
-  const DynamicBlog = dynamic(() => import(`../entries/${name}`), {
+  const DynamicBlog = dynamic(() => import(`../entries/${slug}`), {
     loading: () => <p>Loading...</p>,
   });
   const router = useRouter();
