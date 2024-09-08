@@ -9,7 +9,9 @@ import Image from "next/image";
 import Link from "next/link";
 import ScreenShimmer from "@/components/ScreenShimmer";
 import { IconCircle, IconCircleFilled } from "@tabler/icons-react";
-
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import ReactMarkdown from 'react-markdown';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const tagColors = ['fln-blue', 'fln-lilac', 'fln-orange'];
 
@@ -67,7 +69,7 @@ const ProjectsPage = () => {
                   translateZ="50"
                 >
                   <h2 className="text-xl font-bold">{project.fields.title}</h2>
-                  <p className="text-sm">{project.fields.description}</p>
+                  <ReactMarkdown>{project.fields.description}</ReactMarkdown>
                   <div className="flex gap-2 items-center">
                     <IconCircleFilled className="size-4 text-fln-orange"/>
                     <p className="text-sm">Status: {project.fields.status}</p>
