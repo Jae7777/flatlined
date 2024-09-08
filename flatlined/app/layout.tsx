@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { 
-  Poppins
+  Ubuntu,
+  Roboto_Slab
 } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
@@ -8,7 +9,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "@/components/ui/toaster";
 import { GoogleAnalytics } from '@next/third-parties/google';
 
-const poppins = Poppins({
+const ubuntu = Roboto_Slab({
   subsets: ["latin"],
   weight: ['400', '700'],
   variable: "--font-poppins",
@@ -27,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} bg-background text-white`}>
+      <body className={`${ubuntu.className} bg-fln-black max-w-full`}>
         <Navbar/>
         {children}
         <Toaster />
