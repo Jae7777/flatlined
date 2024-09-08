@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { 
-  Ubuntu,
   Roboto_Slab
 } from "next/font/google";
 import "./globals.css";
