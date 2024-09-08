@@ -1,18 +1,11 @@
 import type { Metadata } from "next";
-import { 
-  Roboto_Slab
-} from "next/font/google";
+
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "@/components/ui/toaster";
 import { GoogleAnalytics } from '@next/third-parties/google';
-
-const ubuntu = Roboto_Slab({
-  subsets: ["latin"],
-  weight: ['400', '700'],
-  variable: "--font-poppins",
-});
+import { ubuntu } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Flatlined",
@@ -27,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ubuntu.className} bg-slate-950 max-w-full`}>
+      <body className={`${ubuntu.className} bg-slate-950 max-w-full text-fln-white`}>
         <Navbar/>
         {children}
         <Toaster />

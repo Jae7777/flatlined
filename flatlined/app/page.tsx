@@ -1,15 +1,11 @@
 'use client';
-import { Fira_Code } from "next/font/google";
 import getProjects from "@/actions/getProjects";
 import { LampContainer } from "@/components/ui/lamp";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Entry, EntrySkeletonType } from "contentful";
 
-const fira_code = Fira_Code({
-  subsets: ["latin"],
-  weight: ["500"],
-});
+import { fira_code } from "./fonts";
 
 export const dynamic = "force-dynamic";
 
