@@ -16,8 +16,8 @@ const ubuntu = Roboto_Slab({
 
 export const metadata: Metadata = {
   title: "Flatlined",
-  description: "Turning the world to code.",
-  icons: [{ rel: "icon", url: "/favicon.svg" }],
+  description: "The visionary coding studio",
+  icons: [{ rel: "icon", url: "/icon.svg" }],
 };
 
 export default function RootLayout({
