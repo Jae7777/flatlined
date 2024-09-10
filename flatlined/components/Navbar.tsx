@@ -1,6 +1,6 @@
 'use client'
 
-import { IconBrandVscode, IconHome, IconMessage, IconNotebook, IconUsersGroup } from '@tabler/icons-react';
+import { IconBrandVscode, IconHome, IconMessage, IconNotebook, IconUsers } from '@tabler/icons-react';
 import Link from "next/link";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
 import { usePathname } from "next/navigation";
@@ -11,11 +11,11 @@ const navItems = [
   {
     title: 'Q&A',
     icon: IconMessage,
-    href: '/q&a'
+    href: '/qna'
   },
   {
     title: 'Members',
-    icon: IconUsersGroup,
+    icon: IconUsers,
     href: '/members'
   },
   {
@@ -50,7 +50,7 @@ const Navbar = () => {
               <TooltipTrigger className="relative">
                 <Link href={item.href} className="flex flex-col items-center justify-center gap-1" >
                   <item.icon
-                    strokeWidth={2}
+                    strokeWidth={1.5}
                     className={` text-fln-white size-8`}
                   />
                   {isActive && 
