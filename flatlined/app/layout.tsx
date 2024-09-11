@@ -16,32 +16,9 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://flatlined.gg"),
-  title: "Flatlined Studio",
-  description:
-    "The visionary coding studio - Let Flatlined Studio be the technical half of your project.",
-  keywords: [
-    "web development",
-    "game development",
-    "app development",
-    "consultants",
-    "programming",
-    "coding",
-  ],
   openGraph: {
     siteName: "Flatlined Studio",
     type: "website",
-    url: "https://www.flatlined.gg/",
-    title: "Elastic Stack, Next.js, Python, JavaScript Tutorials | dminhvu",
-    description:
-      "The visionary coding studio - Let Flatlined Studio be the technical half of your project.",
-    images: [
-      {
-        url: "https://www.flatlined.gg/thumbnail.png",
-        width: 2600,
-        height: 1350,
-        alt: "dminhvu",
-      },
-    ],
     locale: "en_US",
   },
   robots: {
@@ -65,9 +42,6 @@ export const metadata: Metadata = {
       type: "image/svg+xml",
     },
   ],
-  alternates: {
-    canonical: "https://www.flatlined.gg/",
-  },
 };
 
 export default function RootLayout({

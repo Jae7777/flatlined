@@ -14,7 +14,12 @@ export const metadata: Metadata = {
     "app development",
     "consultants",
     "programming",
+    "coding",
     "flatlined",
+    "flatlined studio",
+    "online programmers",
+    "online developers",
+    "developers for hire",
   ],
   openGraph: {
     url: "https://www.flatlined.gg/",
