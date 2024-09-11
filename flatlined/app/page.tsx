@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         url: "https://www.flatlined.gg/thumbnail.png",
         width: 2600,
         height: 1350,
-        alt: "dminhvu"
+        alt: "Flatlined Studio",
       }
     ]
   },
