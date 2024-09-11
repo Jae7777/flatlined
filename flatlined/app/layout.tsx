@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 import "./globals.css";
 import Navbar from "../components/Navbar";
@@ -7,10 +7,38 @@ import { Toaster } from "@/components/ui/toaster";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { ubuntu } from "./fonts";
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#212531"
+};
+ 
 export const metadata: Metadata = {
-  title: "Flatlined",
-  description: "The visionary coding studio",
-  icons: [{ rel: "icon", url: "/icon.svg" }],
+  metadataBase: new URL("https://flatlined.gg"),
+  openGraph: {
+    siteName: "Flatlined Studio",
+    type: "website",
+    locale: "en_US"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+    googleBot: "index, follow"
+  },
+  applicationName: "Flatlined Studio",
+  appleWebApp: {
+    title: "Flatlined Studio",
+    statusBarStyle: "default",
+    capable: true
+  },
+  icons: [{ 
+    rel: "icon", 
+    url: "https://www.flatlined.gg/icon.svg", 
+    type: "image/svg+xml" 
+  }],
 };
 
 export default function RootLayout({

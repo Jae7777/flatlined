@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .dark-dot-pattern {
-  background-color: #20202a;
+  @apply bg-fln-black;
   opacity: 1;
   background-image:  radial-gradient(#774c3e 0.6px, transparent 0.6000000000000001px), radial-gradient(#774c3e 0.6000000000000001px, #20202A 0.6px);
   background-size: 24px 24px;
