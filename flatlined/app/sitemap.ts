@@ -11,25 +11,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: 'https://flatlined.gg/members',
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'weekly',
       priority: 0.5,
     },
     {
       url: 'https://flatlined.gg/projects',
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: 'https://flatlined.gg/qna',
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'weekly',
       priority: 0.5,
     },
     {
       url: 'https://flatlined.gg/blog',
       lastModified: new Date(),
-      changeFrequency: 'weekly',
+      changeFrequency: 'daily',
       priority: 0.9,
     },
   ]
