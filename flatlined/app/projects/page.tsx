@@ -23,7 +23,6 @@ const ProjectsPage = () => {
       try {
         const data = await getProjects();
         setProjects(data);
-        console.log(data[0].fields);
       } catch (error) {
         console.error('Failed to fetch projects:', error);
       } finally {

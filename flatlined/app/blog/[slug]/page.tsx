@@ -1,16 +1,10 @@
 "use client";
 
-import Image from "next/image";
-import dynamic from "next/dynamic";
 import { IoIosArrowBack } from "react-icons/io";
 import { useRouter } from "next/navigation";
 
 const BlogEntry = ({ params }: { params: { slug: string } }) => {
   const slug = params.slug;
-  // dynamically import the blog entry
-  const DynamicBlog = dynamic(() => import(`../entries/${slug}`), {
-    loading: () => <p>Loading...</p>,
-  });
   const router = useRouter();
 
   return (
@@ -25,7 +19,7 @@ const BlogEntry = ({ params }: { params: { slug: string } }) => {
         Back
       </div>
       <div className="border-[2px] px-8 py-6 shadow-xl border-null-sidebar-body rounded-lg">
-        <DynamicBlog />
+        blog
       </div>
     </div>
   );
