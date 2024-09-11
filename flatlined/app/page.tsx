@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "app development",
     "consultants",
     "programming",
-    "coding",
+    "flatlined",
   ],
   openGraph: {
     url: "https://www.flatlined.gg/",

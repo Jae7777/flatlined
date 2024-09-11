@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "app development",
     "consultants",
     "programming",
-    "flatlined",
+    "coding",
   ],
   openGraph: {
     siteName: "Flatlined Studio",
