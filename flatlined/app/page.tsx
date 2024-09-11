@@ -2,6 +2,8 @@ import { LampContainer } from "@/components/ui/lamp";
 import { motion } from "framer-motion";
 import { fira_code } from "./fonts";
 import { Metadata } from "next";
+
+export const dynamic = 'force-dynamic';
  
 export const metadata: Metadata = {
   title: "Flatlined Studio",
