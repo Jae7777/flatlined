@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: "https://www.flatlined.gg/",
     type: "website",
-    title: "Elastic Stack, Next.js, Python, JavaScript Tutorials | dminhvu",
+    title: "Flatlined Studio",
     description:
       "The visionary coding studio - Let Flatlined Studio be the technical half of your project.",
     images: [
