@@ -1,6 +1,6 @@
 'use client'
 
-import { IconBrandVscode, IconHome, IconMessage, IconNotebook, IconUsers } from '@tabler/icons-react';
+import { IconBrandVscode, IconHome, IconMessage, IconNotebook, IconUsers, IconRobot, IconKeyboard } from '@tabler/icons-react';
 import Link from "next/link";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
 import { usePathname } from "next/navigation";
@@ -15,7 +15,7 @@ const navItems = [
   },
   {
     title: 'Members',
-    icon: IconUsers,
+    icon: IconRobot,
     href: '/members'
   },
   {
@@ -25,7 +25,7 @@ const navItems = [
   },
   {
     title: 'Projects',
-    icon: IconBrandVscode,
+    icon: IconKeyboard,
     href: '/projects'
   },
   {

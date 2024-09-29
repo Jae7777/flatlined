@@ -14,7 +14,7 @@ const MembersPage = () => {
   }, [])
 
   return (
-    <div className='mx-auto max-w-6xl px-12 md:px-24 py-24'>
+    <div className='mx-auto max-w-6xl px-12 md:px-24 py-24 pb-48'>
       <ReactMarkdown rehypePlugins={[rehypeRaw]} className='prose prose-invert max-w-full'>
         {markdown}
       </ReactMarkdown>

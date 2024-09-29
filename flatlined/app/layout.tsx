@@ -60,7 +60,7 @@ export default function RootLayout({
         <Analytics />
         <GoogleAnalyticsClient />
         <Navbar />
-        <div className="pb-24">{children}</div>
+        <div className="">{children}</div>
         <Toaster />
       </body>
     </html>
