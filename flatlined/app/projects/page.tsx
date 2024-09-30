@@ -3,7 +3,6 @@
 import getProjects from "@/actions/getProjects";
 import { Entry, EntrySkeletonType } from "contentful";
 import { useEffect, useState } from "react";
-import { fira_code } from "../fonts";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Image from "next/image";
 import Link from "next/link";
