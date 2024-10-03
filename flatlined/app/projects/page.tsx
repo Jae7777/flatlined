@@ -43,7 +43,7 @@ const ProjectsPage = () => {
   }
 
   return (
-    <div className="prose prose-invert max-w-[100rem] p-8 pb-24">
+    <div className="prose prose-invert max-w-[100rem] p-8 pb-24 mx-auto">
       {/* Preload tailwind colors */}
       <div className="hidden bg-fln-blue bg-fln-lilac bg-fln-orange aria-hidden"/>
 
@@ -110,7 +110,7 @@ const ProjectsPage = () => {
                         </Carousel>
                       </CardItem>
                     }
-    
+
                     {/* Links */}
                     <CardItem>
                       <ul>
