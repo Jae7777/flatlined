@@ -3,7 +3,6 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
-import { Toaster } from "@/components/ui/toaster";
 import { ubuntu } from "./fonts";
 import GoogleAnalyticsClient from "@/components/analytics/Google";
 
@@ -38,7 +37,7 @@ export const metadata: Metadata = {
   icons: [
     {
       rel: "icon",
-      url: "https://www.flatlined.gg/icon.svg",
+      url: "https://flatlined.gg/icon.svg",
       type: "image/svg+xml",
     },
   ],
@@ -61,7 +60,6 @@ export default function RootLayout({
         <GoogleAnalyticsClient />
         <Navbar />
         <div className="">{children}</div>
-        <Toaster />
       </body>
     </html>
   );

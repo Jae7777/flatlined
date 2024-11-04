@@ -3,7 +3,7 @@
 import getProjects from "@/actions/getProjects";
 import { Entry, EntrySkeletonType } from "contentful";
 import { useEffect, useState } from "react";
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import { CardBody, CardContainer, CardItem } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import ScreenShimmer from "@/components/ScreenShimmer";
@@ -16,8 +16,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { cn } from "@/lib/utils";
 
-const tagColors = ['fln-blue', 'fln-lilac', 'fln-orange'];
+const tagColors = ['fln-blue', 'fln-lilac', 'fln-orange', 'rose-500', 'emerald-600', 'violet-600', 'fuchsia-600', 'indigo-600'];
 
 const ProjectsPage = () => {
   const [projects, setProjects] = useState<Entry<EntrySkeletonType, undefined, string>[]>([]);
@@ -45,7 +46,8 @@ const ProjectsPage = () => {
   return (
     <div className="prose prose-invert max-w-[100rem] p-8 pb-24 mx-auto">
       {/* Preload tailwind colors */}
-      <div className="hidden bg-fln-blue bg-fln-lilac bg-fln-orange aria-hidden"/>
+      <div className="hidden bg-fln-blue bg-fln-lilac bg-fln-orange bg-rose-500 bg-emerald-600 bg-violet-600 bg-fuchsia-600 bg-indigo-600 aria-hidden"/>
+
 
       <h1 className={`text-gradient-silver w-fit text-center mx-auto mt-12`}>
         Projects
@@ -60,9 +62,10 @@ const ProjectsPage = () => {
                     {/* Tags */}
                     <CardItem className="w-fit flex flex-wrap gap-2" >
                       {project.fields.tags && project.fields.tags.map((tag: any, index: number) => {
-                        const color = tagColors[index % tagColors.length];
+                        const randomIndex = Math.floor(Math.random() * tagColors.length);
+                        const color = tagColors[randomIndex];
                         return (
-                          <span key={index} className={`text-xs font-semibold text-fln-white p-1 px-2 rounded-md ${"bg-"+color}`}>
+                          <span key={index} className={`text-xs font-semibold text-fln-white p-1 px-2 rounded-md ${'bg-'+color}`}>
                             {tag.fields.name}
                           </span>
                         )
