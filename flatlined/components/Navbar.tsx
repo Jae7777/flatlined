@@ -78,7 +78,7 @@ const Navbar = () => {
           {navItems.map((item, index) => {
             const isActive = pathname === item.href
             return (
-              <Link key={index} href={item.href} className="flex gap-2 items-center justify-center w-full" >
+              <Link key={index} href={item.href} className="flex gap-2 items-center justify-start w-full" >
                 {isActive && <div className='size-[0.4rem] rounded-full bg-fln-blue' />}
                 <item.icon
                   strokeWidth={1.5}
