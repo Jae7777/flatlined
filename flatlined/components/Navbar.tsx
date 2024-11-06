@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className="hidden md:flex bottom-6 md:bottom-10 inset-x-0 max-w-2xl mx-auto z-50 fixed w-full items-center justify-center bg-fln-black rounded-full text-fln-white py-4 gap-14 border-2 border-slate-950 shadow-xl"
+        className="flex md:flex-col rounded-full py-6 md:py-14 bottom-6 md:bottom-1/2 md:translate-y-1/2 z-50 fixed bg-neutral-800 items-center justify-center right-1/2 translate-x-1/2 md:translate-x-0 md:right-0 text-fln-white gap-8 sm:gap-14 shadow-xl px-14 md:px-6 md:mr-4"
       >
         <TooltipProvider delayDuration={100}>
           {navItems.map((item, index) => {
@@ -53,12 +53,8 @@ const Navbar = () => {
                   <Link href={item.href} className="flex flex-col items-center justify-center gap-1" >
                     <item.icon
                       strokeWidth={1.5}
-                      className={` text-fln-white size-8`}
+                      className={`${isActive ? 'text-yellow-500' : 'text-white'} size-8`}
                     />
-                    {isActive && 
-                      <div className='w-7 h-[0.3rem] rounded-full bg-fln-blue' />
-                    }
-                    
                   </Link>
                 </TooltipTrigger>
                 <TooltipContent sideOffset={8} side="top">
@@ -70,26 +66,6 @@ const Navbar = () => {
         </TooltipProvider>
       </nav>
 
-      <Sheet>
-        <SheetTrigger>
-          <IconMenu2 className="md:hidden fixed bottom-6 right-6 z-50 text-fln-white size-12 border-[1px] rounded-full p-2 bg-slate-950" />
-        </SheetTrigger>
-        <SheetContent side="right" className='bg-slate-950 flex flex-col  items-start justify-center gap-8'>
-          {navItems.map((item, index) => {
-            const isActive = pathname === item.href
-            return (
-              <Link key={index} href={item.href} className="flex gap-2 items-center justify-start w-full" >
-                {isActive && <div className='size-[0.4rem] rounded-full bg-fln-blue' />}
-                <item.icon
-                  strokeWidth={1.5}
-                  className={` text-fln-white size-8`}
-                />
-                <p className='text-fln-white'>{item.title}</p>
-              </Link>
-            ) 
-          })}
-        </SheetContent>
-      </Sheet>
     </div>
   )
 }
