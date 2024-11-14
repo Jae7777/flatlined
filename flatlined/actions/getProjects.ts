@@ -20,3 +20,5 @@ const getProjects = async () => {
 }
 
 export default getProjects;
+
+export const revalidate = 60 * 5;

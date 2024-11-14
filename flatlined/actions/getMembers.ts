@@ -1,23 +1,5 @@
 import contentful from '@/lib/contentful';
-import { EntryFieldTypes } from 'contentful';
 
-// export interface Member {
-//   contentTypeId: "member";
-//   fields: {
-//       name: EntryFieldTypes.Text;
-//       pfp: EntryFieldTypes.AssetLink;
-//       bio: EntryFieldTypes.RichText;
-//       projects: EntryFieldTypes.EntryLink[];
-//   }
-// }
-// interface Author {
-//   contentTypeId: "author",
-//   fields: {
-//       fullName: EntryFieldTypes.Text,
-//       headshot: EntryFieldTypes.AssetLink,
-//       bio: EntryFieldTypes.RichText
-//   }
-// }
 const getMembers = async () => {
   try {
     const response = await contentful.getEntries({

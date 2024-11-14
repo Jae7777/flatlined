@@ -59,7 +59,7 @@ export default function RootLayout({
       >
         <Analytics />
         <GoogleAnalytics gaId="G-LN3G8VX180" />
-        <div className="max-w-[100rem] grid grid-cols-1 md:grid-cols-[1fr_5rem] lg:grid-cols-[18rem_1fr_5rem] mx-auto">
+        <div className="max-w-[100rem] grid grid-cols-1 md:grid-cols-[auto_5rem] lg:grid-cols-[18rem_auto_5rem] mx-auto">
           <div className=" hidden lg:block"><Image src='/FLATLINED.svg' alt='Flatlined Studio Banner' width={0} height={0} className=' w-[18rem] h-fit fixed bottom-0' /></div>
           <div className="py-24">{children}</div>
           <Navbar />
