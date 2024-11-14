@@ -72,7 +72,7 @@ const ProjectsPage = () => {
                     </CardItem>
     
                     {/* Info */}
-                    <CardItem>
+                    <CardItem className="w-full">
                       <h2 className="text-xl font-bold">{project.fields.title}</h2>
                       <div className="prose prose-invert max-w-full">
                         <ReactMarkdown>{project.fields.description}</ReactMarkdown>
