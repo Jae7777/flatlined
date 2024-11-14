@@ -73,7 +73,25 @@ const ProjectsPage = () => {
     
                     {/* Info */}
                     <CardItem className="w-full">
+                      <div className="flex justify-center items-center gap-3">
+                        {project.fields.startDate && <p className="text-sm text-neutral-300 ">
+                          {new Date(project.fields.startDate).toLocaleDateString('en-US', {
+                            month: '2-digit',
+                            day: '2-digit',
+                            year: 'numeric'
+                          })}
+                        </p>}
+                        {project.fields.startDate && project.fields.endDate && <span>-</span>}
+                        {project.fields.endDate && <p className="text-sm text-neutral-300 ">
+                          {new Date(project.fields.endDate).toLocaleDateString('en-US', {
+                            month: '2-digit',
+                            day: '2-digit',
+                            year: 'numeric'
+                          })}  
+                        </p>}
+                      </div>
                       <h2 className="text-xl font-bold">{project.fields.title}</h2>
+                      
                       <div className="prose prose-invert max-w-full">
                         <ReactMarkdown>{project.fields.description}</ReactMarkdown>
                         <div className="flex gap-2 items-center">
