@@ -1,4 +1,4 @@
-import { Fira_Code, Roboto_Slab, Tiny5 } from "next/font/google";
+import { Fira_Code, Roboto_Slab, Tiny5, Bebas_Neue, Teko } from "next/font/google";
 
 
 export const fira_code = Fira_Code({
@@ -12,6 +12,16 @@ export const ubuntu = Roboto_Slab({
 });
 
 export const tiny5 = Tiny5({
+  subsets: ["latin"],
+  weight: ["400"],
+})
+
+export const bebas_neue = Bebas_Neue({
+  subsets: ["latin"],
+  weight: ["400"],
+})
+
+export const teko = Teko({
   subsets: ["latin"],
   weight: ["400"],
 })

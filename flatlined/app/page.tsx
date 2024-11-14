@@ -1,6 +1,6 @@
 import { fira_code } from "./fonts";
 import { Metadata } from "next";
-import Hero from "@/components/Hero";
+import ProjectsPage from "./projects/page";
 
 export const dynamic = 'force-dynamic';
  
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
     "developers for hire",
   ],
   openGraph: {
-    url: "https://www.flatlined.gg/",
+    url: "https://flatlined.gg/",
     type: "website",
     title: "Flatlined Studio",
     description:
       "The visionary coding studio - Let Flatlined Studio be the technical half of your project.",
     images: [
       {
-        url: "https://www.flatlined.gg/thumbnail.png",
+        url: "https://flatlined.gg/thumbnail.png",
         width: 2600,
         height: 1350,
         alt: "Flatlined Studio",
@@ -37,14 +37,15 @@ export const metadata: Metadata = {
     ]
   },
   alternates: {
-    canonical: "https://www.flatlined.gg/"
+    canonical: "https://flatlined.gg/"
   }
 };
 
 export default function Home() {
   return (
-    <main className={`${fira_code.className}`}>
-      <Hero />
+    <main className={`${fira_code.className} `}>
+
+      <ProjectsPage />
     </main>
   );
 }

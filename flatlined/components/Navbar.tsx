@@ -1,71 +1,94 @@
 'use client'
-
-import { IconHome, IconMessage, IconNotebook, IconUsers, IconRobot, IconKeyboard, IconMenu2 } from '@tabler/icons-react';
+import { IconHome, IconNotebook} from '@tabler/icons-react';
 import Link from "next/link";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
 import { usePathname } from "next/navigation";
-import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
+import ProfileDialog from './ProfileDialog';
 
-const email = 'justin.flatlined@gmail.com'
 
-const navItems = [
-  {
-    title: 'Q&A',
-    icon: IconMessage,
-    href: '/qna'
-  },
-  {
-    title: 'Members',
-    icon: IconRobot,
-    href: '/members'
-  },
+interface NavItem {
+  title: string;
+  icon: React.FC<any>;
+  href: string;
+}
+
+const navItems: NavItem[] = [
   {
     title: 'Home',
     icon: IconHome,
     href: '/'
   },
   {
-    title: 'Projects',
-    icon: IconKeyboard,
-    href: '/projects'
-  },
-  {
-    title: 'Blog & Posts',
+    title: 'Blog',
     icon: IconNotebook,
     href: '/blog'
-  }
+  },
 ]
+
+const NavItem = ({ item, isActive }: { item: NavItem, isActive: boolean}) => (
+  <Tooltip>
+    <TooltipTrigger className="relative">
+      <Link href={item.href} className="flex flex-col items-center justify-center gap-1">
+        <item.icon
+          strokeWidth={1.5}
+          className={`${isActive ? 'text-yellow-500' : 'text-white'} size-8`}
+        />
+      </Link>
+    </TooltipTrigger>
+    <TooltipContent sideOffset={8} side="top">
+      {item.title}
+    </TooltipContent>
+  </Tooltip>
+)
 
 const Navbar = () => {
   const pathname = usePathname()
-
+  
   return (
     <div>
-      <nav
-        className="flex md:flex-col rounded-full py-6 md:py-14 bottom-6 md:bottom-1/2 md:translate-y-1/2 z-50 fixed bg-neutral-800 items-center justify-center right-1/2 translate-x-1/2 md:translate-x-0 md:right-0 text-fln-white gap-8 sm:gap-14 shadow-xl px-14 md:px-6 md:mr-4"
-      >
+      {/* md nav */}
+      <nav className="hidden md:flex flex-col rounded-full py-14 bottom-0 top-0 z-50 bg-neutral-800 items-center justify-center text-fln-white gap-14 shadow-xl px-6 h-fit w-fit fixed my-auto">
         <TooltipProvider delayDuration={100}>
-          {navItems.map((item, index) => {
-            const isActive = pathname === item.href
-            return (
-              <Tooltip key={index}>
-                <TooltipTrigger className="relative">
-                  <Link href={item.href} className="flex flex-col items-center justify-center gap-1" >
-                    <item.icon
-                      strokeWidth={1.5}
-                      className={`${isActive ? 'text-yellow-500' : 'text-white'} size-8`}
-                    />
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent sideOffset={8} side="top">
-                  {item.title}
-                </TooltipContent>
-              </Tooltip>
-            ) 
-        })}
+          <Tooltip>
+            <TooltipTrigger>
+              <ProfileDialog />
+            </TooltipTrigger>
+            <TooltipContent sideOffset={8} side="top">
+              Profile
+            </TooltipContent>
+          </Tooltip>
+          
+          {navItems.map((item, index) => (
+            <NavItem 
+              key={index}
+              item={item}
+              isActive={pathname === item.href}
+            />
+          ))}
         </TooltipProvider>
       </nav>
 
+      {/* mobile nav */}
+      <nav className="flex md:hidden rounded-full py-6 bottom-6 right-0 left-0 z-50 bg-neutral-800 items-center justify-center mx-auto text-fln-white gap-14 shadow-xl px-14 h-fit w-fit fixed">
+        <TooltipProvider delayDuration={100}>
+          <Tooltip>
+            <TooltipTrigger>
+              <ProfileDialog />
+            </TooltipTrigger>
+            <TooltipContent sideOffset={8} side="top">
+              Profile
+            </TooltipContent>
+          </Tooltip>
+
+          {navItems.map((item, index) => (
+            <NavItem 
+              key={index}
+              item={item}
+              isActive={pathname === item.href}
+            />
+          ))}
+        </TooltipProvider>
+      </nav>
     </div>
   )
 }

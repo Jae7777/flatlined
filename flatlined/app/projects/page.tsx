@@ -16,7 +16,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { cn } from "@/lib/utils";
+import { tiny5 } from "../fonts";
 
 const tagColors = ['fln-blue', 'fln-lilac', 'fln-orange', 'rose-500', 'emerald-600', 'violet-600', 'fuchsia-600', 'indigo-600'];
 
@@ -44,19 +44,18 @@ const ProjectsPage = () => {
   }
 
   return (
-    <div className="prose prose-invert max-w-[100rem] p-8 pb-24 mx-auto">
+    <div className="prose prose-invert max-w-full mx-auto px-4 md:px-12 ">
       {/* Preload tailwind colors */}
       <div className="hidden bg-fln-blue bg-fln-lilac bg-fln-orange bg-rose-500 bg-emerald-600 bg-violet-600 bg-fuchsia-600 bg-indigo-600 aria-hidden"/>
 
-
-      <h1 className={`text-gradient-silver w-fit text-center mx-auto mt-12`}>
+      <h5 className={` text-left text-7xl text-sky-500 ${tiny5.className}`}>
         Projects
-      </h1>
+      </h5>
       <Accordion type='single' collapsible className="flex flex-col">
         {projects.map((project: any, index: number) => {
           return (
-            <CardContainer key={index}>
-              <CardBody className="bg-fln-black relative hover:shadow-2xl p-6 h-auto border max-w-[55rem] w-full border-black/[0.1] rounded-xl">
+            <CardContainer key={index} className="m-0 ">
+              <CardBody className="bg-fln-black relative hover:shadow-2xl p-6 h-fit border max-w-[55rem] w-full border-black/[0.1] rounded-xl ">
                 <AccordionItem value={project.fields.title}>
                   <AccordionTrigger className="flex flex-col hover:no-underline hover:opacity-70 duration-200">
                     {/* Tags */}

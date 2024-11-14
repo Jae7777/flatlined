@@ -4,7 +4,8 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
 import { ubuntu } from "./fonts";
-import GoogleAnalyticsClient from "@/components/analytics/Google";
+import Image from "next/image";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 // Metadata export is allowed in this server component
 export const viewport: Viewport = {
@@ -54,12 +55,15 @@ export default function RootLayout({
         {/* Any additional metadata or viewport tags can go here */}
       </head>
       <body
-        className={`${ubuntu.className} bg-slate-950 max-w-full text-fln-white`}
+        className={`${ubuntu.className} bg-neutral-800 max-w-full text-fln-white`}
       >
         <Analytics />
-        <GoogleAnalyticsClient />
-        <Navbar />
-        <div className="">{children}</div>
+        <GoogleAnalytics gaId="G-LN3G8VX180" />
+        <div className="max-w-[100rem] grid grid-cols-1 md:grid-cols-[1fr_5rem] lg:grid-cols-[18rem_1fr_5rem] mx-auto">
+          <div className=" hidden lg:block"><Image src='/FLATLINED.svg' alt='Flatlined Studio Banner' width={0} height={0} className=' w-[18rem] h-fit fixed bottom-0' /></div>
+          <div className="py-24">{children}</div>
+          <Navbar />
+        </div>
       </body>
     </html>
   );
