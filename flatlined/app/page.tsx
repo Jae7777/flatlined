@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 export const metadata: Metadata = {
   title: "Flatlined Studio",
   description:
-    "The visionary coding studio - Let Flatlined Studio be the technical half of your project.",
+    "Probably up to no good.",
   keywords: [
     "web development",
     "game development",
@@ -26,12 +26,12 @@ export const metadata: Metadata = {
     type: "website",
     title: "Flatlined Studio",
     description:
-      "The visionary coding studio - Let Flatlined Studio be the technical half of your project.",
+      "Probably up to no good.",
     images: [
       {
         url: "https://flatlined.gg/thumbnail.png",
-        width: 2600,
-        height: 1350,
+        width: 1920,
+        height: 1080,
         alt: "Flatlined Studio",
       }
     ]
