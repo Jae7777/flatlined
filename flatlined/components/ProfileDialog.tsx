@@ -24,7 +24,7 @@ const profiles = [
   {
     icon: <TiDocumentText size={24} />,
     title: 'Resume',
-    action: <Link href="/resume.pdf" locale={false} target="_blank" rel="noopener noreferrer" className="hover:text-sky-400 duration-150 hover:translate-y-1"><IconDownload size={24}/></Link>,
+    action: <Link href="/Resume.pdf" locale={false} target="_blank" rel="noopener noreferrer" className="hover:text-sky-400 duration-150 hover:translate-y-1"><IconDownload size={24}/></Link>,
   },
   {
     icon: <IconBrandLinkedin size={24} />,
