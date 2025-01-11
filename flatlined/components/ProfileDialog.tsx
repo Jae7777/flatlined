@@ -8,7 +8,7 @@ import {
 import { Separator } from './ui/separator';
 import { IconBrandGithub, IconBrandLinkedin, IconCropPortrait, IconDownload } from '@tabler/icons-react';
 import Link from "next/link";
-import { SiDevpost } from "react-icons/si";
+import { SiDevpost, SiItchdotio } from "react-icons/si";
 import { TiDocumentText } from "react-icons/ti";
 import { MdOutlineEmail } from "react-icons/md";
 import { FiExternalLink } from "react-icons/fi";
@@ -40,6 +40,11 @@ const profiles = [
     icon: <SiDevpost size={24} />,
     title: 'DevPost',
     action: <Link href="https://devpost.com/jchen4086" target="_blank" className="hover:text-sky-400 duration-150 hover:translate-y-1"><FiExternalLink  size={24}/></Link>,
+  },
+  {
+    icon: <SiItchdotio size={24} />,
+    title: 'Itch.io',
+    action: <Link href="https://itch.io/profile/jae7777" target="_blank" className="hover:text-sky-400 duration-150 hover:translate-y-1"><FiExternalLink  size={24}/></Link>,
   }
 ]
 
