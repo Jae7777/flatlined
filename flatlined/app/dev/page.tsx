@@ -16,7 +16,7 @@ const snippets = {
         className="w-full h-full rounded-lg"
         sizes="50vw"
       />,
-      onClick: (() => useRouter().push("")) // paste gh url
+      onClick: (router: ReturnType<typeof useRouter>) => () => router.push("") // paste gh url
     }
   ],
   Buttons: [
