@@ -55,7 +55,7 @@ export default function Home() {
         priority
         fetchPriority='high'
       />
-      {/* <ProjectsPage /> */}
+      <ProjectsPage />
     </main>
   );
 }
