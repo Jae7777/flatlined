@@ -55,6 +55,7 @@ export default function Home() {
         priority
         fetchPriority='high'
       />
+      <div className="h-[10rem]" />
       <ProjectsPage />
     </main>
   );
