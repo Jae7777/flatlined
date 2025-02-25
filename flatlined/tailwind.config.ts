@@ -56,7 +56,18 @@ const config = {
         "fln-lilac": "#da8ae5",
         "fln-gray": "#bfbfbf",
         "fln-orange": "#f6b080",
-        "fln-blue": "#429dd7"
+        "fln-blue": "#429dd7",
+        'fln-purple': '#272030',
+        'fln-vitra': '#3d5557',
+        'fln-pale': '#f5d6c1',
+        'fln-red': '#fc5163',
+        'fln-gray-100': '#c7c2b8',
+        'fln-gray-200': '#ad9f96',
+        'fln-gray-300': '#585753',
+        'fln-gray-400': '#595856',
+        'fln-gray-950': '#1f1e20',
+        'fln-yellow-300': '#ffed36',
+
       }
     },
   },

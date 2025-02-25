@@ -1,6 +1,7 @@
 import { fira_code } from "./fonts";
 import { Metadata } from "next";
 import ProjectsPage from "./projects/page";
+import Image from "next/image";
 
 export const dynamic = 'force-dynamic';
  
@@ -44,8 +45,17 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className={`${fira_code.className} `}>
-
-      <ProjectsPage />
+      <Image
+        src="/FLATLINED.png"
+        alt="flatlined hero logo art"
+        width={0}
+        height={0}
+        className="w-full h-full mx-auto max-w-[74rem] px-8"
+        sizes="100vw"
+        priority
+        fetchPriority='high'
+      />
+      {/* <ProjectsPage /> */}
     </main>
   );
 }

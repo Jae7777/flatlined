@@ -45,31 +45,8 @@ const Navbar = () => {
   const pathname = usePathname()
   
   return (
-    <div>
-      {/* md nav */}
-      <nav className="hidden md:flex flex-col rounded-full py-14 bottom-0 top-0 z-50 bg-neutral-800 items-center justify-center text-fln-white gap-14 shadow-xl px-6 h-fit w-fit fixed my-auto">
-        <TooltipProvider delayDuration={100}>
-          <Tooltip>
-            <TooltipTrigger>
-              <ProfileDialog />
-            </TooltipTrigger>
-            <TooltipContent sideOffset={8} side="top">
-              Profile
-            </TooltipContent>
-          </Tooltip>
-          
-          {navItems.map((item, index) => (
-            <NavItem 
-              key={index}
-              item={item}
-              isActive={pathname === item.href}
-            />
-          ))}
-        </TooltipProvider>
-      </nav>
-
-      {/* mobile nav */}
-      <nav className="flex md:hidden rounded-full py-6 bottom-6 right-0 left-0 z-50 bg-neutral-800 items-center justify-center mx-auto text-fln-white gap-14 shadow-xl px-14 h-fit w-fit fixed">
+    <div className='fixed'>
+      <nav className="flex rounded-full py-6 bottom-6 right-0 left-0 z-50 bg-neutral-800 items-center justify-center mx-auto text-fln-white gap-14 shadow-xl px-14 h-fit w-fit fixed">
         <TooltipProvider delayDuration={100}>
           <Tooltip>
             <TooltipTrigger>

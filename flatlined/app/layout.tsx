@@ -55,15 +55,13 @@ export default function RootLayout({
         {/* Any additional metadata or viewport tags can go here */}
       </head>
       <body
-        className={`${ubuntu.className} bg-neutral-800 max-w-full text-fln-white`}
+        className={`${ubuntu.className} bg-fln-gray-950 text-fln-gray-100 max-w-[100rem] grid grid-cols-1 mx-auto`}
       >
         <Analytics />
         <GoogleAnalytics gaId="G-LN3G8VX180" />
-        <div className="max-w-[100rem] grid grid-cols-1 md:grid-cols-[auto_5rem] lg:grid-cols-[18rem_auto_5rem] mx-auto">
-          <div className=" hidden lg:block"><Image src='/FLATLINED.svg' alt='Flatlined Studio Banner' width={0} height={0} className=' w-[18rem] h-fit fixed bottom-0' /></div>
-          <div className="py-24">{children}</div>
-          <Navbar />
-        </div>
+
+        <div className="py-24">{children}</div>
+        <Navbar />
       </body>
     </html>
   );

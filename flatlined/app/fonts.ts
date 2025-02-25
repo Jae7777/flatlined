@@ -1,4 +1,4 @@
-import { Fira_Code, Roboto_Slab, Tiny5, Bebas_Neue, Teko } from "next/font/google";
+import { Fira_Code, Roboto_Slab, Tiny5, Bebas_Neue, Teko, Space_Grotesk } from "next/font/google";
 
 
 export const fira_code = Fira_Code({
@@ -25,3 +25,5 @@ export const teko = Teko({
   subsets: ["latin"],
   weight: ["400"],
 })
+
+export const space_grotresk = Space_Grotesk({ subsets: ["latin"] });
