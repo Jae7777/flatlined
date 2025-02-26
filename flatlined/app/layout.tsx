@@ -55,7 +55,7 @@ export default function RootLayout({
         {/* Any additional metadata or viewport tags can go here */}
       </head>
       <body
-        className={`${ubuntu.className} bg-fln-gray-950 text-fln-gray-100 max-w-[100rem] grid grid-cols-1 mx-auto`}
+        className={`${ubuntu.className} bg-fln-gray-950 text-fln-gray-100 max-w-[100rem] mx-auto`}
       >
         <Analytics />
         <GoogleAnalytics gaId="G-LN3G8VX180" />

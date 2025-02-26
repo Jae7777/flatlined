@@ -1,7 +1,7 @@
 import { fira_code } from "./fonts";
 import { Metadata } from "next";
-import ProjectsPage from "./projects/page";
 import Image from "next/image";
+import Projects from "@/components/Projects";
 
 export const dynamic = 'force-dynamic';
  
@@ -56,7 +56,7 @@ export default function Home() {
         fetchPriority='high'
       />
       <div className="h-[10rem]" />
-      <ProjectsPage />
+      <Projects />
     </main>
   );
 }
