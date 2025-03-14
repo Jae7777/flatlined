@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "Flatlined Studio",
     description:
-      "Probably up to no good.",
+      "Up to no good.",
     images: [
       {
         url: "https://flatlined.gg/thumbnail.png",

@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   icons: [
     {
       rel: "icon",
-      url: "https://flatlined.gg/icon.svg",
+      url: "https://flatlined.gg/icon.png",
       type: "image/svg+xml",
     },
   ],
